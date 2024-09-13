@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 149px;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+}
+
+.container-grid {
+    min-width: 1620px;
+    width: 80%;
+    
+}
