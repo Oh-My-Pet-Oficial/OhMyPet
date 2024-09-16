@@ -32,6 +32,9 @@
 
 h1, h2, a{
     font-family: 'Dosis';
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration-line: none;
 }
 
 header {
@@ -46,7 +49,7 @@ header {
 
 .container-grid {
     max-width: 1620px;
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -61,9 +64,6 @@ header nav {
 
 header a {
     color: var(--cinza-omp);
-    font-size: 1.5em;
-    font-weight: 600;
-    text-decoration-line: none;
 }
 
 header .container-grid {
@@ -85,4 +85,31 @@ header .login-icons a{
     justify-content: space-between;
     align-items: center;
     gap: 8px;
+}
+
+
+/* Slider Principal */
+
+main .slider { 
+    padding: 48px 0;
+}
+
+.list img {
+    width: 1620px;
+    height: 584px;
+
+    border: solid 1px var(--laranja-omp);
+    object-fit: cover;
+    border-radius: 65px;
+}
+
+.assinatura-omp {
+    background-color: var(--laranja-claro-omp);
+    
+    display: flex;
+    justify-content: center;
+}
+
+.assinatura-omp a{
+    color: var(--laranja-escuro-omp);
 }
