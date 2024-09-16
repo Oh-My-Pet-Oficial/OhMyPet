@@ -28,7 +28,7 @@
     font-weight: 100 900;
 }
 
-/**/
+/* Font size */
 
 h1, h2, h3, a{
     font-family: 'Dosis';
@@ -41,9 +41,6 @@ h2 {
     font-size: 2.25em;
 }
 
-h3 {
-    font-size: 1.25em;
-}
 
 header {
     height: 149px;
@@ -95,6 +92,9 @@ header .login-icons a{
     gap: 8px;
 }
 
+main {
+    width: 100vw;
+}
 
 /* Slider Principal */
 
@@ -103,7 +103,7 @@ main .slider {
 }
 
 .list img {
-    width: 1620px;
+    width: 100%;
     height: 584px;
 
     border: solid 1px var(--laranja-omp);
@@ -136,20 +136,19 @@ main .slider {
 .categoria-dog, .categoria-cat {
     display: flex;
 
-    justify-content: center;
+    justify-content: space-between;
 
-    border: 1px solid var(--roxo-omp);
-    border-radius: 65px;
+    gap: 16px;
 }
 
-.dog {
-    width: 394px;
+.dog, .cat {
+    width: 25%;
     height: 266px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 8px;
 
     background-color: var(--roxo-claro-omp);
     border: 1px solid var(--roxo-omp);
@@ -157,12 +156,10 @@ main .slider {
 
     color: var(--roxo-escuro-omp);
 
-    padding: 34px;
+    padding: 24px;
 }
 
 .produtos-lista {
-    width: 1210px;
-    
     padding: 32px;
 
     display: flex;
@@ -171,6 +168,13 @@ main .slider {
     gap: 16px;
 
     /* H3 Color*/
+    color: var(--roxo-omp);
+    border: 1px solid var(--roxo-omp);
+    border-radius: 65px;
+}
+
+.produtos-lista a h3 {
+    font-size: 0.833333em;
     color: var(--roxo-omp);
 }
 
@@ -188,6 +192,7 @@ main .slider {
     background-color: var(--roxo-claro-omp);
     border-radius: 20px;
 }
+
 
 button {
     width: 205px;
@@ -207,28 +212,17 @@ button {
 }
 
 .cat {
-    width: 394px;
-    height: 266px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-
     background-color: var(--laranja-claro-omp);
     border: 1px solid var(--laranja-omp);
-    border-radius: 65px;
 
     color: var(--laranja-escuro-omp);
-
-    padding: 34px;
-}
-
-.categoria-cat {
-    border: 1px solid var(--laranja-omp);
 }
 
 .categoria-cat .produtos-lista{
+    border: 1px solid var(--laranja-omp);
+}
+
+.categoria-cat .produtos-lista h3{
     color: var(--laranja-escuro-omp);
 }
 
@@ -242,9 +236,18 @@ button {
 
 
 .servicos {
+    width: 100vw;
+    padding: 48px 0;
+
     background-color: var(--bege-omp);
     color: var(--roxo-omp);
 }
+
+.servicos h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
 
 .container-serv {
     width: 100%;
@@ -252,19 +255,57 @@ button {
 
     justify-content: space-between;
 
-    gap: 16px 16px;
+    gap: 24px;
+}
+
+.container-serv h3 {
+    font-size: 1.3333333em;
+}
+
+.servicos span {
+    display: grid;
+    gap: 24px;
 }
 
 .serv1, .serv4 {
-    width: 531px;
-    height: 534px;
+    width: 523px;
+    height: 524px;
 
-    background-color: var(--laranja-claro-omp);
+    overflow: hidden;
+    position: relative;
 }
 
 .serv2, .serv3 {
     width: 526px;
     height: 250px;
-    
+
+    overflow: hidden;
+    position: relative;
+}
+
+.serv1, .serv2 {
+    background-color: var(--laranja-claro-omp);
+    border: solid 1px var(--laranja-omp);
+    border-radius: 65px;
+    color: var(--laranja-escuro-omp);
+}
+
+.serv3, .serv4 {
+    border: solid 1px var(--roxo-omp);
+    border-radius: 65px;
+    color: var(--roxo-escuro-omp);
     background-color: var(--roxo-claro-omp);
+}
+
+
+.intro {
+    width: 100%;
+    
+    position: absolute;
+    background-color: var(--laranja-claro-omp);
+    color: var(--laranja-escuro-omp);
+
+    padding: 6px;
+    bottom: 0px;
+    text-align: center;
 }
