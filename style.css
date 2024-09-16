@@ -4,16 +4,85 @@
     padding: 0;
 }
 
+:root {
+    --laranja-claro-omp: #FBD4BA;
+    --roxo-claro-omp: #CECCE7;
+    --roxo-omp: #6460A7 ;
+    --laranja-omp: #D65F36 ;
+    --roxo-escuro-omp: #2A315B ;
+    --laranja-escuro-omp: #753E2B;
+    --bege-omp: #F4F3EE;
+    --cinza-omp: #515151;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Dosis';
+    src: url(fonts/Dosis-VariableFont_wght.ttf);
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(fonts/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 100 900;
+}
+
+/**/
+
+h1, h2, a{
+    font-family: 'Dosis';
+}
+
 header {
     height: 149px;
     width: 100vw;
 
     display: flex;
     align-items: center;
+
+    background-color: var(--bege-omp);
 }
 
 .container-grid {
-    min-width: 1620px;
+    max-width: 1620px;
     width: 80%;
-    
+    margin: 0 auto;
+}
+
+header nav {
+    /* Preciso calcular em porcentagem*/
+    width: 539px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+header a {
+    color: var(--cinza-omp);
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration-line: none;
+}
+
+header .container-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .login-icons {
+    width: 25%;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+header .login-icons a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
 }
