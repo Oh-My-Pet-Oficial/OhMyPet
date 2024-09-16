@@ -1,0 +1,43 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Dosis;
+}
+
+:root {
+    --laranja-claro-omp: #FBD4BA;
+    --roxo-claro-omp: #CECCE7;
+    --roxo-omp: #6460A7 ;
+    --laranja-omp: #D65F36 ;
+    --roxo-escuro-omp: #2A315B ;
+    --laranja-escuro-omp: #753E2B;
+    --bege-omp: #F4F3EE;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*para mexer na foto do banner*/
+.conteudo-banner {
+    text-align: right;
+    background-size: cover;
+    
+    display: flex;
+}
+
+/*configuração da fonte*/
+.banner p {
+    font-size: 30px;
+    font-family: "Dosis";
+    color: black;
+    text-align: left;
+    align-items: center;
+}
+
+
