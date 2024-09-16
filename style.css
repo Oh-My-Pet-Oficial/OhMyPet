@@ -137,6 +137,9 @@ main .slider {
     display: flex;
 
     justify-content: center;
+
+    border: 1px solid var(--roxo-omp);
+    border-radius: 65px;
 }
 
 .dog {
@@ -221,6 +224,10 @@ button {
     padding: 34px;
 }
 
+.categoria-cat {
+    border: 1px solid var(--laranja-omp);
+}
+
 .categoria-cat .produtos-lista{
     color: var(--laranja-escuro-omp);
 }
@@ -231,4 +238,33 @@ button {
 
 .categoria-cat button {
     background-color: var(--laranja-omp);
+}
+
+
+.servicos {
+    background-color: var(--bege-omp);
+    color: var(--roxo-omp);
+}
+
+.container-serv {
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 16px 16px;
+}
+
+.serv1, .serv4 {
+    width: 531px;
+    height: 534px;
+
+    background-color: var(--laranja-claro-omp);
+}
+
+.serv2, .serv3 {
+    width: 526px;
+    height: 250px;
+    
+    background-color: var(--roxo-claro-omp);
 }
