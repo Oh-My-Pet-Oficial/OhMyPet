@@ -30,11 +30,19 @@
 
 /**/
 
-h1, h2, a{
+h1, h2, h3, a{
     font-family: 'Dosis';
     font-size: 1.5em;
     font-weight: 600;
     text-decoration-line: none;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 1.25em;
 }
 
 header {
@@ -104,12 +112,123 @@ main .slider {
 }
 
 .assinatura-omp {
+    height: 41px;
+
     background-color: var(--laranja-claro-omp);
     
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .assinatura-omp a{
     color: var(--laranja-escuro-omp);
+}
+
+.categorias-pets {
+    padding: 132px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.categoria-dog, .categoria-cat {
+    display: flex;
+
+    justify-content: center;
+}
+
+.dog {
+    width: 394px;
+    height: 266px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    background-color: var(--roxo-claro-omp);
+    border: 1px solid var(--roxo-omp);
+    border-radius: 65px;
+
+    color: var(--roxo-escuro-omp);
+
+    padding: 34px;
+}
+
+.produtos-lista {
+    width: 1210px;
+    
+    padding: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    /* H3 Color*/
+    color: var(--roxo-omp);
+}
+
+.produto {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.produto img{
+    width: 205px;
+    height: 146px;
+
+    background-color: var(--roxo-claro-omp);
+    border-radius: 20px;
+}
+
+button {
+    width: 205px;
+    height: 70px;
+    background: var(--roxo-omp);
+    color: white;
+    border-radius: 78px;
+    border: none;
+
+    cursor: pointer;
+    
+    font-family: 'Dosis';
+    font-weight: 600;
+    font-size: 1.5em;
+    
+    transition: ease-in-out 300ms;
+}
+
+.cat {
+    width: 394px;
+    height: 266px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    background-color: var(--laranja-claro-omp);
+    border: 1px solid var(--laranja-omp);
+    border-radius: 65px;
+
+    color: var(--laranja-escuro-omp);
+
+    padding: 34px;
+}
+
+.categoria-cat .produtos-lista{
+    color: var(--laranja-escuro-omp);
+}
+
+.categoria-cat .produto img {
+    background-color: var(--laranja-claro-omp);
+}
+
+.categoria-cat button {
+    background-color: var(--laranja-omp);
 }
