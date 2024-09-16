@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Dosis";
+    src: url(font/Dosis-VariableFont_wght.ttf);
+}
+
+:root {
+    --laranja-claro-omp: #FBD4BA;
+    --roxo-claro-omp: #CECCE7;
+    --roxo-omp: #6460A7;
+    --laranja-omp: #D65F36;
+    --roxo-escuro-omp: #2A315B;
+    --laranja-escuro-omp: #753E2B;
+    --bege-omp: #F4F3EE;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+
+    /* margin: 20px - Espacamento externo de 20px
+    margin: 20px 10px - Espacamento 20 px na vertical, 10px na horizontal
+    margin: 20px 10px 5px - Espacamento 20px para cima, 10px na horizontal e 5px para baixo
+    margin: 20px 10px 5px 2px - Espacamento 20px para cima, 10px para direita,  5px para baixo, 2px para esquerda*/
+
+    margin: 0 auto;
+    ;
+}
+
+
+.banner {
+ height: 300px;
+}
+
+.banner img {
+    width: 100%;
+    height: 130%;
+    align-items: center;
+}
+
+.servicos{
+    height: 100px;
+    margin-top: 150px;
+}
+
+.servicos h1{
+    font-family: "Dosis";
+    font-size: 36px;
+
+    display: flex;
+    justify-content: center;
+    color: var(--roxo-omp);
+}
+
+#banhoevet{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-banho {
+    height: 440px;
+    width: 550px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--roxo-claro-omp);
+
+    border-radius: 50px;
+
+}
+
+.banhoetosa{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banhoetosa img{
+    margin-right: 150px;
+    height: 45px;
+}
+
+.banhoetosa h1{
+    font-family: "Dosis";
+    font-size: 24px;
+    color: var(--roxo-omp);
+}
