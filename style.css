@@ -42,6 +42,10 @@ h2 {
     color: var(--roxo-omp);
 }
 
+p {
+    font-family: 'Inter';
+}
+
 
 header {
     height: 149px;
@@ -423,4 +427,51 @@ footer {
     width: 100%;
 
     background-color: var(--bege-omp);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    padding: 48px 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    gap: 24px;
+}
+
+.container-link h2, .formas-pagamento h2, .redes-sociais h2{
+    font-size: 1.5em;
+    margin-bottom: 12px;
+}
+
+.links a {
+    font-weight: 500;
+    font-size: 1.25em;
+
+    text-decoration: none;
+    color: var(--cinza-omp);
+}
+
+.formas-pagamento, .redes-sociais {
+    display: flex;
+    flex-direction: column;
+}
+
+.pg-icones, .social-icones {
+    display: flex;
+
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 600;
+    color: var(--cinza-omp);
 }
