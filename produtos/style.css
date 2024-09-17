@@ -1,0 +1,40 @@
+*{   margin: 0;
+    padding: 0px;
+    box-sizing: border-box;}
+
+    @font-face {
+    font-family: "Dosis";
+    src: url(font/Dosis-VariableFont_wght.ttf);
+
+    font-family: "Inter";
+    src: url(font/Inter-VariableFont_wght.ttf);}
+
+:root {--laranja-claro-omp: #FBD4BA;
+    --roxo-claro-omp: #CECCE7;
+    --roxo-omp: #6460A7;
+    --laranja-omp: #D65F36;
+    --roxo-escuro-omp: #2A315B;
+    --laranja-escuro-omp: #753E2B;
+    --bege-omp: #F4F3EE;}
+
+header { width: 100%;
+    height: 20%;
+    background-color: #F4F3EE;
+    display: flex;
+    justify-content: center;}
+
+header img { width: 84%;}
+
+#mais-vendidos { height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.fundo-mv { width: 84%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CECCE7;}
+
+.produto-mv { }
