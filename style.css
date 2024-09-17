@@ -44,7 +44,7 @@ h2 {
 
 header {
     height: 149px;
-    width: 100vw;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -93,7 +93,7 @@ header .login-icons a{
 }
 
 main {
-    width: 100vw;
+    width: 100%;
 }
 
 /* Slider Principal */
@@ -236,11 +236,13 @@ button {
 
 
 .servicos {
-    width: 100vw;
+    width: 100%;
     padding: 48px 0;
 
     background-color: var(--bege-omp);
     color: var(--roxo-omp);
+
+    position: relative;
 }
 
 .servicos h2 {
@@ -298,6 +300,12 @@ button {
 }
 
 
+.serv1 img, .serv2 img,.serv3 img,.serv4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .intro {
     width: 100%;
     
@@ -309,3 +317,26 @@ button {
     bottom: 0px;
     text-align: center;
 }
+
+.serv3 .intro, .serv4 .intro {
+    background-color: var(--roxo-claro-omp);
+    color: var(--roxo-escuro-omp);
+}  
+
+.bolinhas {
+    width: 370px;
+    height: 480px;
+    background-image: url(images/elements/bolinha.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+
+.servicos .bolinhas:nth-child(1) {
+    transform: rotate(0.5turn);
+    right: 0;
+    top: 310px;
+    left: unset;
+}
+
