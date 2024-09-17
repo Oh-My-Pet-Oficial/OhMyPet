@@ -39,6 +39,7 @@ h1, h2, h3, a{
 
 h2 {
     font-size: 2.25em;
+    color: var(--roxo-omp);
 }
 
 
@@ -154,10 +155,17 @@ main .slider {
     border: 1px solid var(--roxo-omp);
     border-radius: 65px;
 
-    color: var(--roxo-escuro-omp);
-
     padding: 24px;
 }
+
+.dog h2 {
+    color: var(--roxo-escuro-omp);
+}
+
+.cat h2 {
+    color: var(--laranja-escuro-omp);
+}
+
 
 .produtos-lista {
     padding: 32px;
@@ -264,6 +272,10 @@ button {
     font-size: 1.3333333em;
 }
 
+.servicos {
+    margin-bottom: 132px;
+}
+
 .servicos span {
     display: grid;
     gap: 24px;
@@ -340,3 +352,75 @@ button {
     left: unset;
 }
 
+.adocao {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 132px;
+}
+
+.adocao h2 {
+    margin-bottom: 12px;
+}
+
+.container-carrossel {
+    width: 100%;
+}
+
+.slider-1 {
+    width: 100%;
+    height: 469px;
+
+    background-color: var(--laranja-claro-omp);
+    border: solid 1px var(--laranja-omp);
+    border-radius: 65px;
+    
+    padding: 48px 132px;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.slider-1 img {
+    width: 44%;
+    height:auto;
+}
+
+.slider-1 h3 {
+    width: 38%;
+    font-size: 3em;
+    color: var(--laranja-escuro-omp);
+}
+
+.contato {
+    width: 100%;
+    margin-bottom: 132px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contato h2 {
+    margin-bottom: 12px;
+}
+
+.contato button{
+    width: auto;
+    padding: 4px 64px;
+    background-color: var(--laranja-omp);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer {
+    width: 100%;
+
+    background-color: var(--bege-omp);
+}
