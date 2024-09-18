@@ -139,3 +139,201 @@ h3 {
     height: auto;
     text-align: left;
 }
+
+
+
+#cases {
+    text-align: center;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    margin: 20px 0; /* Espaçamento externo */
+}
+
+#cases p {
+    margin-bottom: 70px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0; /* Espaçamento externo */
+    padding: 137px; /* Espaçamento interno */
+    margin: 20px 0; /* Espaçamento externo */
+}
+
+/* Para mexer no card 1 */
+.card {
+    height: 400px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    background-color: var(--laranja-claro-omp);
+
+
+}
+
+.card h2 {
+    font-family: "Dosis";
+    font-size: 28px;
+    text-align: center;
+    color: var(--laranja-omp);
+}
+
+.card p {
+    color: var(black);
+
+    font-family:"Inter Tight";
+    font-size: 17px;
+
+    text-align: left;
+
+    padding: 7%;  
+
+}
+
+
+/* Para mexer no card 2 */
+
+.card-2 {
+    height: 400px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--roxo-claro-omp);
+
+
+}
+
+.card-2 h2 {
+    font-family: "Dosis";
+    font-size: 28px;
+    text-align: center;
+    color: var(--roxo-escuro-omp);
+}
+
+.card-2 p {
+    color: var(black);
+
+    font-family:"Inter Tight";
+    font-size: 17px;
+
+    text-align: left;
+
+    padding: 7%;  
+
+}
+
+
+/* Para mexer no card 3 */
+
+.card-3 {
+    height: 400px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--bege-omp);
+
+
+}
+
+.card-3 h2 {
+    font-family: "Dosis";
+    font-size: 28px;
+    text-align: center;
+    color: var(--laranja-escuro-omp);
+}
+
+.card-3 p {
+    color: var(black);
+
+    font-family:"Inter Tight";
+    font-size: 17px;
+
+    text-align: left;
+
+    padding: 7%;  
+
+}
+
+/* Configurando a parte de duvidas */
+
+.dúvidas h2{
+    font-family: "Dosis";
+    font-size: 28px;
+    text-align: center;
+    color: var(--roxo-escuro-omp);
+}
+
+
+.faixa img{
+    height: 30px;
+    width: 30px;
+}
+
+.faixa h2{
+    font-family: "Dosis";
+    font-size: 23px;
+    text-align: center;
+    color: var(--roxo-omp);
+}
+
+.faixa-2 img{
+    height: 30px;
+    width: 30px;
+}
+
+.faixa-2 h2{
+    font-family: "Dosis";
+    font-size: 23px;
+    text-align: center;
+    color: var(--roxo-omp);
+}
+
+/* Duvidas parte de baixo */
+
+.faixa-3 img{
+    height: 30px;
+    width: 30px;
+}
+
+.faixa-3 h2{
+    font-family: "Dosis";
+    font-size: 23px;
+    text-align: center;
+    color: var(--roxo-omp);
+}
+
+.faixa-4 img{
+    height: 30px;
+    width: 30px;
+}
+
+.faixa-4 h2{
+    font-family: "Dosis";
+    font-size: 23px;
+    text-align: center;
+    color: var(--roxo-omp);
+}
