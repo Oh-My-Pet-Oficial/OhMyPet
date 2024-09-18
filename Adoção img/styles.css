@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+    width: 100%;
+}
+ 
+.banner-texto {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.banner-texto h1 {
+    font-size: 36px;
+    color: #6460A7;
+}
+
+.banner-imagem {
+    height: 400px;
+}
+
+.banner-imagem img {
+    
+    height: 100%;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide o layout em duas colunas iguais */
+    gap: 118px;
+    align-items: center;
+
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imagem img {
+    max-width: 100%;
+}
+
+.conteudo {
+    width: 80%;
+}
+
+.conteudo h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 botões por linha */
+    gap: 10px;
+}
+
+.botoes button {
+    padding: 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botoes button:hover {
+    background-color: #ff4c3b;
+}
+
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.texto {
+    font-size: 18px;
+    line-height: 1.6; /* Ajusta o espaçamento entre as linhas */
+    color: #333;
+}
+
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* 3 colunas */
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative; /* Para a imagem no canto direito inferior */
+}
+
+.imagem-esquerda img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+    grid-column: 1 / 2; /* Mantém a imagem na primeira coluna */
+    align-self: start;
+}
+
+.titulo-e-imagem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2 / 3; /* Centraliza o conteúdo entre a primeira e a última coluna */
+}
+
+.titulo-e-imagem h1 {
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.imagem-direita-titulo img {
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / 4; /* O grid ocupa todas as colunas */
+    margin-top: 20px;
+}
+
+.card {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20%;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.imagem-direita-inferior {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.imagem-direita-inferior img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
