@@ -17,13 +17,7 @@
 
 .container-grid {
     width: 80vw;
-    max-width: 1400px;
-
-    /* margin: 20px - Espacamento externo de 20px
-    margin: 20px 10px - Espacamento 20 px na vertical, 10px na horizontal
-    margin: 20px 10px 5px - Espacamento 20px para cima, 10px na horizontal e 5px para baixo
-    margin: 20px 10px 5px 2px - Espacamento 20px para cima, 10px para direita,  5px para baixo, 2px para esquerda*/
-
+    max-width: 1620px;
     margin: 0 auto;
 
 }
@@ -31,6 +25,7 @@
 
 .banner {
     height: 300px;
+    margin-top: 60px;
 }
 
 .banner img {
@@ -67,7 +62,7 @@
     justify-content: space-around;
     /* Distribui os cards com espaçamento ao redor */
     padding: 20px;
-   align-items: center;
+    align-items: center;
 }
 
 .card-banho {
@@ -272,7 +267,7 @@
     justify-content: space-around;
     /* Distribui os cards com espaçamento ao redor */
     padding: 20px;
-   align-items: center;
+    align-items: center;
 }
 
 .card-walker {
@@ -473,7 +468,7 @@
     justify-content: space-around;
     /* Distribui os cards com espaçamento ao redor */
     padding: 20px;
-   align-items: center;
+    align-items: center;
 }
 
 .card-plano {
@@ -666,11 +661,12 @@
 
 #duvidas {
     height: 100px;
-    
+
 }
 
-.duvidas{
-    align-items: center;
+.duvidas {
+    display: block;
+    margin: 0 auto;
 }
 
 .duvidas h1 {
@@ -682,8 +678,8 @@
     color: var(--roxo-omp);
 }
 
-.button{
-    
+.botao {
+
     height: 40px;
     width: 200px;
 
@@ -692,9 +688,12 @@
     border-radius: 25px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+
+
 }
 
-.button button{
+.botao button {
     background-color: var(--laranja-omp);
     color: white;
 
@@ -703,14 +702,79 @@
 
     font-size: 17px;
     font-family: "Dosis";
-    
+
     align-items: center;
     cursor: pointer;
 
-    transition: background-color 500ms;
+    transition: 500ms;
 }
 
-.button img{
+.botao img {
     height: 20px;
     margin-top: 9px;
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    .banner {
+        height: 150px; /* Reduzindo o tamanho da imagem no mobile */
+    }
+
+    .banner img {
+        height: 100%; /* Ajustando a altura da imagem */
+    }
+
+    .servicos {
+        height: auto;
+        margin-top: 100px; /* Reduzindo o espaçamento */
+    }
+
+    .servicos h1 {
+        font-size: 24px; /* Reduzindo o tamanho da fonte para telas menores */
+    }
+
+    .banhoevet {
+        flex-direction: column; /* Coloca os cards um embaixo do outro */
+    }
+
+    .card-banho, .card-vet {
+        width: 100%; /* Ajusta a largura dos cards para caber na tela menor */
+        height: 300px;
+        border-radius: 40px;
+    }
+
+    .card-banho img, .card-vet img {
+        height: 150px; /* Reduz a altura da imagem para dispositivos menores */
+        width: 90%;
+        margin-top: -50px;
+    }
+
+    .card-banho h1, .card-vet h1 {
+        font-size: 18px; /* Reduz o tamanho da fonte nos títulos */
+    }
+
+    .card-banho h2, .card-vet h2{
+        font-size: 10px;
+    }
+
+    .card-banho:hover, .card-vet:hover {
+        width: 100%; /* Ajusta a largura dos cards para caber na tela menor */
+        height: 300px;
+        border-radius: 40px;
+        
+    }
+
+    .card-banho:hover img, .card-vet:hover img {
+        height: 100px; /* Ajusta a altura da imagem ao hover para telas menores */
+        width: 90%;
+
+    }
+
+    .card-banho:hover h2, .card-vet:hover h2{
+        font-size: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
 }
