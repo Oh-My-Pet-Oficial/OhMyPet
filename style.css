@@ -104,15 +104,19 @@ main {
 /* Slider Principal */
 
 main .slider { 
-    padding: 48px 0;
+    margin: 48px auto;
 }
 
 .slider {
-    width: 80%;
+    width: 1620px;
     max-width: 1620px;
     margin: auto;
     position: relative;
     height: 680px;
+    overflow: hidden;
+
+    border-radius: 65px;
+    border: solid 1px var(--laranja-omp);
 }
 
 .list { 
@@ -122,16 +126,16 @@ main .slider {
     height: 100%;
     display: flex;
     width: max-content;
+    transition: 1s;
 }
 
 .list img {
     width: 1620px;
     max-width: 100vw;
-    height: 584px;
+    height: 100%;
 
-    border: solid 1px var(--laranja-omp);
     object-fit: cover;
-    border-radius: 65px;
+    border-radius: 65px;  
 }
 
 .buttons {
