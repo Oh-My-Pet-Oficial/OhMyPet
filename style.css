@@ -150,10 +150,8 @@ main .slider {
 .buttons button {
     width: 50px;
     height: 50px;
-    border: 50%;
-    background-color: #fff;
-    color: var(--laranja-omp);
-    border: solid 2px var(--laranja-omp);
+    border: none;
+    background: none;
 }
 
 .assinatura-omp {
@@ -413,15 +411,20 @@ button {
     width: 100%;
 }
 
+.container-carrossel .slider {
+    width: unset;
+    height: 469px;
+}
+
 .slider-1 {
     width: 100%;
-    height: 469px;
+    height: 100%;
 
     background-color: var(--laranja-claro-omp);
     border: solid 1px var(--laranja-omp);
     border-radius: 65px;
     
-    padding: 48px 132px;
+    padding: 32px 64px;
 
     display: flex;
     justify-content:space-between;
@@ -430,7 +433,6 @@ button {
 
 .slider-1 img {
     width: 44%;
-    height:auto;
 }
 
 .slider-1 h3 {
