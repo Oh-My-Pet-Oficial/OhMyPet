@@ -1,6 +1,8 @@
 @font-face {
     font-family: "Dosis";
     src: url(font/Dosis-VariableFont_wght.ttf);
+    font-family: "Inter Tight";
+    src: url(font/InterTight-VariableFont_wght.ttf);
 }
 
 :root {
@@ -23,12 +25,12 @@
     margin: 20px 10px 5px 2px - Espacamento 20px para cima, 10px para direita,  5px para baixo, 2px para esquerda*/
 
     margin: 0 auto;
-    ;
+
 }
 
 
 .banner {
- height: 300px;
+    height: 300px;
 }
 
 .banner img {
@@ -37,12 +39,12 @@
     align-items: center;
 }
 
-.servicos{
+.servicos {
     height: 100px;
     margin-top: 150px;
 }
 
-.servicos h1{
+.servicos h1 {
     font-family: "Dosis";
     font-size: 36px;
 
@@ -51,10 +53,21 @@
     color: var(--roxo-omp);
 }
 
-#banhoevet{
+#banhoevet {
     height: 800px;
     display: flex;
     justify-content: center;
+}
+
+.banhoevet {
+    display: flex;
+    /* Define o container para usar flexbox */
+    gap: 20px;
+    /* Adiciona espaçamento entre os cards */
+    justify-content: space-around;
+    /* Distribui os cards com espaçamento ao redor */
+    padding: 20px;
+   align-items: center;
 }
 
 .card-banho {
@@ -73,20 +86,631 @@
 
     border-radius: 50px;
 
+    transition: all 0.3s ease;
+
 }
 
-.banhoetosa{
-    display: flex;
-    justify-content: space-evenly;
-}
 
-.banhoetosa img{
-    margin-right: 150px;
-    height: 45px;
-}
-
-.banhoetosa h1{
+.card-banho h1 {
     font-family: "Dosis";
     font-size: 24px;
     color: var(--roxo-omp);
+    margin-top: 50px;
+}
+
+.card-banho img {
+    height: 300px;
+    width: 450px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-banho h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: transparent;
+    margin-top: -20px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-banho:hover {
+    height: 440px;
+    width: 550px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--roxo-claro-omp);
+
+    border-radius: 50px;
+
+    border: 4px solid var(--roxo-omp);
+    /* Define uma borda de 2px de espessura e cor preta */
+
+    transition: all 0.3s ease;
+
+}
+
+.card-banho:hover img {
+    height: 230px;
+    width: 350px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-banho:hover h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: #000;
+    margin-top: -65px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    font-weight: 300;
+    /* Define a fonte como light */
+    transition: all 0.3s ease;
+
+}
+
+.card-vet {
+    height: 440px;
+    width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--laranja-claro-omp);
+
+    border-radius: 50px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-vet h1 {
+    font-family: "Dosis";
+    font-size: 24px;
+    color: var(--laranja-omp);
+    margin-top: 50px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-vet img {
+    height: 300px;
+    width: 580px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-vet h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: transparent;
+    margin-top: -20px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-vet:hover {
+    height: 440px;
+    width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--laranja-claro-omp);
+
+    border-radius: 50px;
+
+    border: 4px solid var(--laranja-omp);
+    /* Define uma borda de 2px de espessura e cor preta */
+
+    transition: all 0.3s ease;
+
+}
+
+.card-vet:hover img {
+    height: 230px;
+    width: 450px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-vet:hover h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: #000;
+    margin-top: -65px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    font-weight: 300;
+    /* Define a fonte como light */
+    transition: all 0.3s ease;
+
+}
+
+#walkeresitter {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.walkeresitter {
+    display: flex;
+    /* Define o container para usar flexbox */
+    gap: 20px;
+    /* Adiciona espaçamento entre os cards */
+    justify-content: space-around;
+    /* Distribui os cards com espaçamento ao redor */
+    padding: 20px;
+   align-items: center;
+}
+
+.card-walker {
+    height: 440px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--laranja-claro-omp);
+
+    border-radius: 50px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.card-walker h1 {
+    font-family: "Dosis";
+    font-size: 24px;
+    color: var(--laranja-omp);
+    margin-top: 50px;
+}
+
+.card-walker img {
+    height: 300px;
+    width: 510px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-walker h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: transparent;
+    margin-top: -20px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-walker:hover {
+    height: 440px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--laranja-claro-omp);
+
+    border-radius: 50px;
+
+    border: 4px solid var(--laranja-omp);
+    /* Define uma borda de 2px de espessura e cor preta */
+
+    transition: all 0.3s ease;
+
+}
+
+.card-walker:hover img {
+    height: 255px;
+    width: 380px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-walker:hover h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: #000;
+    margin-top: -65px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    font-weight: 300;
+    /* Define a fonte como light */
+    transition: all 0.3s ease;
+
+}
+
+.card-sitter {
+    height: 440px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--roxo-claro-omp);
+
+    border-radius: 50px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.card-sitter h1 {
+    font-family: "Dosis";
+    font-size: 24px;
+    color: var(--roxo-omp);
+    margin-top: 50px;
+}
+
+.card-sitter img {
+    height: 300px;
+    width: 510px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-sitter h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: transparent;
+    margin-top: -20px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-sitter:hover {
+    height: 440px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--roxo-claro-omp);
+
+    border-radius: 50px;
+
+    border: 4px solid var(--roxo-omp);
+    /* Define uma borda de 2px de espessura e cor preta */
+
+    transition: all 0.3s ease;
+
+}
+
+.card-sitter:hover img {
+    height: 255px;
+    width: 380px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+}
+
+.card-sitter:hover h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: #000;
+    margin-top: -65px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    font-weight: 300;
+
+    transition: all 0.3s ease;
+}
+
+#planoeadest {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.planoeadest {
+    display: flex;
+    /* Define o container para usar flexbox */
+    gap: 20px;
+    /* Adiciona espaçamento entre os cards */
+    justify-content: space-around;
+    /* Distribui os cards com espaçamento ao redor */
+    padding: 20px;
+   align-items: center;
+}
+
+.card-plano {
+    height: 440px;
+    width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--roxo-claro-omp);
+
+    border-radius: 50px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-plano h1 {
+    font-family: "Dosis";
+    font-size: 24px;
+    color: var(--roxo-omp);
+    margin-top: 50px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-plano img {
+    height: 300px;
+    width: 580px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-plano h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: transparent;
+    margin-top: -20px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-plano:hover {
+    height: 440px;
+    width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--roxo-claro-omp);
+
+    border-radius: 50px;
+
+    border: 4px solid var(--roxo-omp);
+    /* Define uma borda de 2px de espessura e cor preta */
+
+    transition: all 0.3s ease;
+
+}
+
+.card-plano:hover img {
+    height: 230px;
+    width: 450px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-plano:hover h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: #000;
+    margin-top: -65px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    font-weight: 300;
+    /* Define a fonte como light */
+    transition: all 0.3s ease;
+
+}
+
+.card-adest {
+    height: 440px;
+    width: 550px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--laranja-claro-omp);
+
+    border-radius: 50px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.card-adest h1 {
+    font-family: "Dosis";
+    font-size: 24px;
+    color: var(--laranja-omp);
+    margin-top: 50px;
+}
+
+.card-adest img {
+    height: 300px;
+    width: 450px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-adest h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: transparent;
+    margin-top: -20px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-adest:hover {
+    height: 440px;
+    width: 550px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--laranja-claro-omp);
+
+    border-radius: 50px;
+
+    border: 4px solid var(--laranja-omp);
+    /* Define uma borda de 2px de espessura e cor preta */
+
+    transition: all 0.3s ease;
+
+}
+
+.card-adest:hover img {
+    height: 230px;
+    width: 350px;
+    margin-top: -70px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card-adest:hover h2 {
+    font-family: "Inter Tight";
+    font-size: 20px;
+    color: #000;
+    margin-top: -65px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    font-weight: 300;
+    /* Define a fonte como light */
+    transition: all 0.3s ease;
+
+}
+
+#duvidas {
+    height: 100px;
+    
+}
+
+.duvidas{
+    align-items: center;
+}
+
+.duvidas h1 {
+    font-family: "Dosis";
+    font-size: 24px;
+
+    display: flex;
+    justify-content: center;
+    color: var(--roxo-omp);
+}
+
+.button{
+    
+    height: 40px;
+    width: 200px;
+
+    background-color: var(--laranja-omp);
+
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.button button{
+    background-color: var(--laranja-omp);
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Dosis";
+    
+    align-items: center;
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+.button img{
+    height: 20px;
+    margin-top: 9px;
 }

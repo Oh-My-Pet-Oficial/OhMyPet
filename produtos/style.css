@@ -25,16 +25,75 @@ header { width: 100%;
 
 header img { width: 84%;}
 
-#mais-vendidos { height: 400px;
+#mais-vendidos { height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;}
 
-.fundo-mv { width: 84%;
+#mais-vendidos h2 { font-family: "Dosis";
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.5em;}
+
+.fundo-mv { width: 90%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #CECCE7;}
+    justify-content: space-around;
+    background-color: #CECCE7;
+    border-radius: 12px;}
 
-.produto-mv { }
+.produto-mv { height: 80%;
+    width: 150px;
+    background-color: #F4F3EE;
+    border-style: solid;
+    border-color: #6460A7;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;}
+
+.descricao-mv { height: 45%;
+    width: 100%;
+    border-top-style: solid;
+    border-top-color: #6460A7;}
+
+#ofertas { height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+#ofertas h2 { font-family: "Dosis";
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.5em;}
+
+.banner { height: 100%;
+    width: 90%;
+    background-color: #FBD4BA;
+    border-radius: 12px;}
+
+#produtos { height: 100%;
+    padding: 0 5%;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;}
+
+.filtro { height: 20%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;}
+
+
+.especie { height: 50px;
+    width: 100%;
+    background-color: #D65F36;
+    border-radius: 5px 25px 25px 5px;}
+
+.lateral button { height: 30px;
+    width: 80%;
+    background-color: #FBD4BA;
+    border-radius: 5px 15px 15px 5px;
+    border: none;}
