@@ -17,15 +17,56 @@
     --laranja-escuro-omp: #753E2B;
     --bege-omp: #F4F3EE;}
 
-header { width: 100%;
-    height: 20%;
-    background-color: #F4F3EE;
-    display: flex;
-    justify-content: center;}
+    h1, h2, h3, a{
+        font-family: 'Dosis';
+        font-size: 1.5em;
+        font-weight: 600;
+        text-decoration-line: none;
+    }
+    
+    h2 {
+        font-size: 2.25em;
+        color: var(--roxo-omp);
+    }
+    
+    p {
+        font-family: 'Inter';
+    }
 
-header img { width: 84%;}
+    header { height: 149px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: var(--bege-omp);}
+    
+    .container-grid { max-width: 1620px;
+        width: 80vw;
+        margin: 0 auto;}
+    
+    header nav { width: 539px;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;}
+    
+    header a { color: var(--cinza-omp);}
+    
+    header .container-grid { display: flex;
+        justify-content: space-between;
+        align-items: center;}
+    
+    header .login-icons { width: 25%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px;}
+    
+    header .login-icons a { display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;}
+    
+    main { width: 100%;}
 
-#mais-vendidos { height: 300px;
+#mais-vendidos { height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;}
@@ -45,7 +86,7 @@ header img { width: 84%;}
     border-radius: 12px;}
 
 .produto-mv { height: 80%;
-    width: 150px;
+    width: 200px;
     background-color: #F4F3EE;
     border-style: solid;
     border-color: #6460A7;
@@ -53,7 +94,7 @@ header img { width: 84%;}
     display: flex;
     align-items: flex-end;}
 
-.descricao-mv { height: 45%;
+.descricao-mv { height: 40%;
     width: 100%;
     border-top-style: solid;
     border-top-color: #6460A7;}
@@ -80,20 +121,44 @@ header img { width: 84%;}
     flex-direction: column;
     align-self: center;}
 
-.filtro { height: 20%;
-    width: 20%;
+#produtos h2 { font-family: "Dosis";
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.5em;}
+
+.tipo { height: 20%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;}
 
-
 .especie { height: 50px;
     width: 100%;
     background-color: #D65F36;
-    border-radius: 5px 25px 25px 5px;}
+    border-radius: 5px 25px 25px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;}
+
+.especie h2 { margin-left: 25%;
+    color: #2A315B;}
+
+.especie img { height: 80%;
+    width: 45px;
+    margin-right: 5%;}
 
 .lateral button { height: 30px;
-    width: 80%;
+    width: 90%;
     background-color: #FBD4BA;
     border-radius: 5px 15px 15px 5px;
     border: none;}
+
+.busca { height: 50px;
+    width: ;
+    display: flex;
+    flex-direction: row;}
+
+.busca h2 { width: ;}
+
+.busca input { width: fit-content;}
