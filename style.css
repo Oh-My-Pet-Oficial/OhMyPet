@@ -108,7 +108,7 @@ main .slider {
 }
 
 .slider {
-    width: 1620px;
+    width: 100%;
     max-width: 1620px;
     margin: auto;
     position: relative;
@@ -120,12 +120,13 @@ main .slider {
 }
 
 .list { 
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     display: flex;
-    width: max-content;
+    /* width: max-content; */
     transition: 1s;
 }
 
@@ -136,6 +137,10 @@ main .slider {
 
     object-fit: cover;
     border-radius: 65px;  
+}
+
+.item {
+    width: 100%;
 }
 
 .buttons {
@@ -185,6 +190,7 @@ main .slider {
 }
 
 .dog, .cat {
+    min-width: 325px;
     width: 25%;
     height: 266px;
 
@@ -198,6 +204,11 @@ main .slider {
     border-radius: 65px;
 
     padding: 24px;
+}
+
+.dog img, .cat img {
+    width: 80%;
+    height: 80%;
 }
 
 .dog h2 {
@@ -517,3 +528,17 @@ footer p {
     font-weight: 600;
     color: var(--cinza-omp);
 }
+
+@media screen and (max-width: 1700px){ 
+    .produtos-lista {
+        flex-wrap: wrap;
+    }
+}   
+
+@media screen and (max-width: 1600px){ 
+    .slider {
+        width: 80%;
+        min-height: 450px;
+        height: 80%;
+    }
+} 
