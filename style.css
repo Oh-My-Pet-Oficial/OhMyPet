@@ -183,7 +183,7 @@ main .slider {
 
 .categoria-dog, .categoria-cat {
     display: flex;
-
+    align-items: center;
     justify-content: space-between;
 
     gap: 16px;
@@ -254,6 +254,9 @@ main .slider {
     border-radius: 20px;
 }
 
+.categoria-dog .produto img {
+    border: 1px solid var(--roxo-omp);
+}
 
 button {
     width: 205px;
@@ -532,13 +535,65 @@ footer p {
 @media screen and (max-width: 1700px){ 
     .produtos-lista {
         flex-wrap: wrap;
+        width: 50%;
     }
 }   
 
-@media screen and (max-width: 1600px){ 
+@media screen and (max-width: 1650px){ 
     .slider {
         width: 80%;
         min-height: 450px;
         height: 80%;
     }
 } 
+
+@media screen and (max-width: 1250px){ 
+    .produtos-lista {
+        width: 70%;
+    }
+
+    .categoria-cat, .categoria-dog {
+        flex-direction: column;
+    }
+    
+} 
+
+
+@media screen and (max-width: 1024px) {
+    
+    .categoria-cat, .categoria-dog {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .cat, .dog {
+        width: 100%;
+        min-width: unset;
+        height: 150px;
+        justify-content: space-around;
+    }
+
+    .cat img, .dog img {
+        width: auto;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .cat, .dog {
+        padding: 8px;
+        height: 80%;
+    }
+    
+    .cat h2, .dog h2 {
+        
+        font-size: 1.5rem;
+    }
+
+    .cat img, .dog img {
+        height: 80%;
+        width: 30%;
+    }
+}
