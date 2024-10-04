@@ -1,0 +1,50 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Dosis;
+}
+
+:root {
+    --laranja-claro-omp: #FBD4BA;
+    --roxo-claro-omp: #CECCE7;
+    --roxo-omp: #6460A7 ;
+    --laranja-omp: #D65F36 ;
+    --roxo-escuro-omp: #2A315B ;
+    --laranja-escuro-omp: #753E2B;
+    --bege-omp: #F4F3EE;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--laranja-omp);
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Dosis";
+    font-weight: 700; /*Bold*/
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms; 
+}
+
+#contato form button:hover {
+    background-color: #ad4929;
+}
