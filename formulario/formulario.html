@@ -26,43 +26,45 @@
 
     </header>
 
-    <section>
+    <section id="contato">
+        <h1>Nosso atendimento</h1>
         <form>
-            <h1>Nosso atendimento</h1>
-            <div>
-            <div>
-            <div class="campo">
-                <label for="campo-nome">Nome Completo</label>
-                <input id="campo-nome" placeholder="Digite o seu nome..." type="text">
+        
+            <div class="contato-container1">
+                <div>
+                    <div class="campo">
+                        <label for="campo-nome">Nome Completo</label>
+                        <input id="campo-name" placeholder="" type="text">
+                    </div>
+                
+                    <div class="campo">
+                        <label for="campo-telefone">Telefone</label>
+                        <input id="campo-telephone" placeholder="" type="tel">
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="campo">
+                        <label for="campo-cpf">CPF</label>
+                        <input id="campo-CPF" placeholder="" type="cpf">
+                    </div>
+                
+                    <div class="campo">
+                        <label for="campo-email">E-mail</label>
+                        <input id="campoemail" placeholder="" type="email">
+                    </div>
+                </div>
+                <div class="campo-descricao">
+                    <label for="campo-texto">Qual atendimento você está procurando?</label>
+                    <textarea placeholder=" " id="campo-texto" cols="30"
+                        rows="10"></textarea>
+                </div>
+                <div id="buttom">
+                <button type="submit">Enviar</button>
+            </div>
             </div>
 
-            <div class="campo">
-                <label for="campo-telefone">Telefone</label>
-                <input id="campo-telefone" placeholder="Digite seu telefone" type="tel">
-            </div>
-        </div>
-
-
-        <div>
-        <div class="campo">
-            <label for="campo-cpf">CPF</label>
-            <input id="campo-cpf" placeholder="Digite o seu nome..." type="cpf">
-        </div>
-    
-        <div class="campo">
-            <label for="campo-email">CPF</label>
-            <input id="campo-email" placeholder="Digite o seu nome..." type="email">
-        </div>
-    </div>
-</div>
-
-            <div class="campo-descricao">
-                <label for="campo-texto">Qual atendimento você está procurando?</label>
-                <textarea placeholder=" " id="campo-texto" cols="30"
-                    rows="10"></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-
+           
         </form>
     </section>
     </head>

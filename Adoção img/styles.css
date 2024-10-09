@@ -28,7 +28,7 @@ body {
 }
 
 .banner-imagem {
-    height: 400px;
+    height: 550px;
 }
 
 .banner-imagem img {
@@ -42,14 +42,15 @@ body {
     grid-template-columns: 1fr 1fr; /* Divide o layout em duas colunas iguais */
     gap: 118px;
     align-items: center;
+    margin-top: 100px;
 
 
     width: 100%;
-    margin: 0 auto;
+   
 }
 
 .imagem img {
-    max-width: 100%;
+    height: 550px;
 }
 
 .conteudo {
@@ -60,6 +61,7 @@ body {
     font-size: 28px;
     margin-bottom: 20px;
     text-align: center;
+    color: #6460A7;
 }
 
 .botoes {
@@ -92,12 +94,13 @@ body {
 .conteudo h1 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: #6460A7;
 }
 
 .texto {
     font-size: 18px;
-    line-height: 1.6; /* Ajusta o espaçamento entre as linhas */
-    color: #333;
+    /*line-height: 1.6; /* Ajusta o espaçamento entre as linhas */
+    color: #6460A7;
 }
 
 
@@ -129,27 +132,28 @@ body {
 .titulo-e-imagem h1 {
     font-size: 32px;
     margin-right: 20px;
+    color: #6460A7;
 }
 
 .imagem-direita-titulo img {
-    max-width: 1200px;
+    max-width: 1150px;
     height: auto;
     border-radius: 10px;
 }
 
 .cards-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center ;
+    gap: 70px;
     grid-column: 1 / 4; /* O grid ocupa todas as colunas */
     margin-top: 20px;
 }
 
 .card {
     text-align: center;
-    background-color: #f8f8f8;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
     width: 20%;
 }
 
@@ -162,12 +166,12 @@ body {
 .card p {
     margin-top: 10px;
     font-size: 16px;
-    color: #333;
+    color: #6460A7;
 }
 
 .imagem-direita-inferior {
-    position: absolute;
-    bottom: 20px;
+    position: absolute ;
+    bottom: -10px;
     right: 20px;
 }
 
@@ -177,4 +181,31 @@ body {
     border-radius: 10px;
     
 }
+/* feira de adoção */
 
+.imagem-esquerda-feira img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+    grid-column: 1 / 2; /* Mantém a imagem na primeira coluna */
+    align-self: start;
+}
+
+.titulo-e-imagem-feira {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2 / 3; /* Centraliza o conteúdo entre a primeira e a última coluna */
+}
+
+.titulo-e-imagem-feira h1 {
+    font-size: 32px;
+    margin-right: 20px;
+    color: #6460A7;
+}
+
+.imagem-direita-titulo-feira img {
+    max-width: 1150px;
+    height: auto;
+    border-radius: 10px;
+}
