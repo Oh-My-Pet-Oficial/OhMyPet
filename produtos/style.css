@@ -117,23 +117,61 @@
 #produtos { height: 500vh;
     width: 100%;
     padding: 0 5%;
-    margin-top: 6%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;}
-
-#produtos h2 { font-family: "Dosis";
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: 1.5em;}
+    margin-top: 5%;}
 
 .lattex { color: #753E2B;}
 
-.lateral input { border: solid #D65F36;
+.principal input { border: solid #D65F36;
     border-radius: 5px 15px 15px 5px;
-    padding: 5px 0 5px 10px;}
+    padding: 5px 0 5px 10px;
+    margin-bottom: 2%;}
 
-.lateral input:focus { outline: none;}
+.principal input:focus { outline: none;}
 
-.especie { width: 15%;
-    height: 60px;}
+.tipo { display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5%;}
+
+.especie { width: 12%;
+    height: 60px;
+    background-color: #D65F36;
+    border-radius: 5px 50px 50px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;}
+
+.especie h2 { font-size: 1.6em;
+    margin-left: 10%;
+    color: #2A315B;}
+
+.especie img { height: 75%;
+    margin-right: 7%;
+    max-width: 25%;}
+
+.tipo button { height: 35px;
+    width: 10%;
+    background-color: #FBD4BA;
+    margin-top: 1%;
+    border: none;
+    border-radius: 5px 50px 50px 5px;
+    font-family: "Dosis";
+    font-weight: 600;
+    font-size: 1em;
+    color: #753E2B;}
+
+.textos { width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Dosis";
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+    font-size: 0.8em;}
+
+.principal { width: 100%;
+    display: }
+
+.ordenar { display: flex;
+flex-direction: row;}
