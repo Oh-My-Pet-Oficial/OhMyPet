@@ -108,7 +108,7 @@ main .slider {
 }
 
 .slider {
-    width: 1620px;
+    width: 100%;
     max-width: 1620px;
     margin: auto;
     position: relative;
@@ -120,12 +120,13 @@ main .slider {
 }
 
 .list { 
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     display: flex;
-    width: max-content;
+    /* width: max-content; */
     transition: 1s;
 }
 
@@ -136,6 +137,10 @@ main .slider {
 
     object-fit: cover;
     border-radius: 65px;  
+}
+
+.item {
+    width: 100%;
 }
 
 .buttons {
@@ -178,13 +183,14 @@ main .slider {
 
 .categoria-dog, .categoria-cat {
     display: flex;
-
+    align-items: center;
     justify-content: space-between;
 
     gap: 16px;
 }
 
 .dog, .cat {
+    min-width: 325px;
     width: 25%;
     height: 266px;
 
@@ -198,6 +204,11 @@ main .slider {
     border-radius: 65px;
 
     padding: 24px;
+}
+
+.dog img, .cat img {
+    width: 80%;
+    height: 80%;
 }
 
 .dog h2 {
@@ -243,6 +254,9 @@ main .slider {
     border-radius: 20px;
 }
 
+.categoria-dog .produto img {
+    border: 1px solid var(--roxo-omp);
+}
 
 button {
     width: 205px;
@@ -516,4 +530,70 @@ footer p {
     text-align: center;
     font-weight: 600;
     color: var(--cinza-omp);
+}
+
+@media screen and (max-width: 1700px){ 
+    .produtos-lista {
+        flex-wrap: wrap;
+        width: 50%;
+    }
+}   
+
+@media screen and (max-width: 1650px){ 
+    .slider {
+        width: 80%;
+        min-height: 450px;
+        height: 80%;
+    }
+} 
+
+@media screen and (max-width: 1250px){ 
+    .produtos-lista {
+        width: 70%;
+    }
+
+    .categoria-cat, .categoria-dog {
+        flex-direction: column;
+    }
+    
+} 
+
+
+@media screen and (max-width: 1024px) {
+    
+    .categoria-cat, .categoria-dog {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .cat, .dog {
+        width: 100%;
+        min-width: unset;
+        height: 150px;
+        justify-content: space-around;
+    }
+
+    .cat img, .dog img {
+        width: auto;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .cat, .dog {
+        padding: 8px;
+        height: 80%;
+    }
+    
+    .cat h2, .dog h2 {
+        
+        font-size: 1.5rem;
+    }
+
+    .cat img, .dog img {
+        height: 80%;
+        width: 30%;
+    }
 }
