@@ -104,15 +104,19 @@ main {
 /* Slider Principal */
 
 main .slider { 
-    padding: 48px 0;
+    margin: 48px auto;
 }
 
 .slider {
-    width: 80%;
+    width: 1620px;
     max-width: 1620px;
     margin: auto;
     position: relative;
     height: 680px;
+    overflow: hidden;
+
+    border-radius: 65px;
+    border: solid 1px var(--laranja-omp);
 }
 
 .list { 
@@ -122,16 +126,16 @@ main .slider {
     height: 100%;
     display: flex;
     width: max-content;
+    transition: 1s;
 }
 
 .list img {
     width: 1620px;
     max-width: 100vw;
-    height: 584px;
+    height: 100%;
 
-    border: solid 1px var(--laranja-omp);
     object-fit: cover;
-    border-radius: 65px;
+    border-radius: 65px;  
 }
 
 .buttons {
@@ -146,10 +150,8 @@ main .slider {
 .buttons button {
     width: 50px;
     height: 50px;
-    border: 50%;
-    background-color: #fff;
-    color: var(--laranja-omp);
-    border: solid 2px var(--laranja-omp);
+    border: none;
+    background: none;
 }
 
 .assinatura-omp {
@@ -409,15 +411,20 @@ button {
     width: 100%;
 }
 
+.container-carrossel .slider {
+    width: unset;
+    height: 469px;
+}
+
 .slider-1 {
     width: 100%;
-    height: 469px;
+    height: 100%;
 
     background-color: var(--laranja-claro-omp);
     border: solid 1px var(--laranja-omp);
     border-radius: 65px;
     
-    padding: 48px 132px;
+    padding: 32px 64px;
 
     display: flex;
     justify-content:space-between;
@@ -426,7 +433,6 @@ button {
 
 .slider-1 img {
     width: 44%;
-    height:auto;
 }
 
 .slider-1 h3 {

@@ -1,0 +1,9 @@
+/*:root {
+    --laranja-claro-omp: #FBD4BA;
+    --roxo-claro-omp: #CECCE7;
+    --roxo-omp: #6460A7 ;
+    --laranja-omp: #D65F36 ;
+    --roxo-escuro-omp: #2A315B ;
+    --laranja-escuro-omp: #753E2B;
+    --bege-omp: #F4F3EE;
+}
