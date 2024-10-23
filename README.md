@@ -9,6 +9,6 @@
 >- Contato - [@MarinaRochad](https://github.com/MarinaRochad)
 >- Serviços - [@camilleneves](https://github.com/camilleneves)
 
-> [!Cover]
+> [!TIP]
 ><a href="https://www.figma.com/design/g7phvNySHY1X4qUNiHTx79/Moodboard-Oh-My-Pet?node-id=380-2&t=8F7wNG4lYa3JLZNB-1"><img src="https://i.postimg.cc/RhLK0pJr/Capa.png" alt="Capa manual da marca Oh My Pet!">
 ></a>
