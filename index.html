@@ -8,25 +8,53 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container-grid">
-            <img src="images/logotipo/logo-header.svg" alt="Logotipo OMP">
-            <nav>
-                <a href="index.html">Principal</a>
-                <a href="Adoção img/Adoção.html">Adote</a>
-                <a href="produtos/index.html">Produtos</a>
-                <a href="servicos/servicos.html">Serviços</a>
-            </nav>
+            <img id="icon-logo-compact" src="images/logotipo/gatinho-icon.svg" alt="Versão compacta do Logotipo Oh My Pet">
+            <div class="menu" id="menu">
 
-            <div class="login-icons">
-                <a href=""> 
-                    <img src="images/icons/contact-icon.svg" alt="">
-                    Contato</a>
+                <div class="header-links">
+                    <img id="icon-logo" src="images/logotipo/logo-header.svg" alt="Logotipo OMP">
 
-                <a href="">
-                    <img src="images/icons/login-icon.svg" alt="">
-                    Entrar</a>
+                    <nav class="header-nav">
+                        <ul class="header-nav-lista">
+                            <li>
+                                <a href="index.html">Principal</a>
+                            </li>
+                            <li>
+                                <a href="Adoção img/Adoção.html">Adote</a>
+                            </li>
+                            <li>
+                                <a href="produtos/index.html">Produtos</a>
+                            </li>
+                            <li>
+                                <a href="servicos/servicos.html">Serviços</a>
+                            </li>
+                        </ul>
+                    </nav>
+        
+                    <div class="login-icons">
+                        <a href=""> 
+                            <img src="images/icons/contact-icon.svg" alt="">
+                            Contato</a>
+        
+                        <a href="">
+                            <img src="images/icons/login-icon.svg" alt="">
+                            Entrar</a>
+                    </div>
+                </div>
+               
             </div>
+           
+            <button class="menu-button" onclick="openCloseMenu()">
+                <svg id="icon-bars"  width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 12.75C0 9.29297 2.80893 6.5 6.28571 6.5H81.7143C85.1911 6.5 88 9.29297 88 12.75C88 16.207 85.1911 19 81.7143 19H6.28571C2.80893 19 0 16.207 0 12.75ZM0 44C0 40.543 2.80893 37.75 6.28571 37.75H81.7143C85.1911 37.75 88 40.543 88 44C88 47.457 85.1911 50.25 81.7143 50.25H6.28571C2.80893 50.25 0 47.457 0 44ZM88 75.25C88 78.707 85.1911 81.5 81.7143 81.5H6.28571C2.80893 81.5 0 78.707 0 75.25C0 71.793 2.80893 69 6.28571 69H81.7143C85.1911 69 88 71.793 88 75.25Z" fill="#6460A7"/>
+                </svg>
+                    
+                <svg id="icon-x" width="88" height="118" viewBox="0 0 88 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M78.5125 34.5126C81.3771 31.648 81.3771 26.9959 78.5125 24.1313C75.6479 21.2668 70.9958 21.2668 68.1313 24.1313L44 48.2855L19.8458 24.1543C16.9813 21.2897 12.3292 21.2897 9.4646 24.1543C6.60002 27.0188 6.60002 31.6709 9.4646 34.5355L33.6188 58.6668L9.48752 82.8209C6.62293 85.6855 6.62293 90.3376 9.48752 93.2022C12.3521 96.0668 17.0042 96.0668 19.8688 93.2022L44 69.048L68.1542 93.1793C71.0188 96.0439 75.6709 96.0439 78.5354 93.1793C81.4 90.3147 81.4 85.6626 78.5354 82.798L54.3813 58.6668L78.5125 34.5126Z" fill="#6460A7"/>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -92,7 +120,7 @@
                         <h3>Acessórios</h3>
                     </a>
                 </div>
-                <button>Ver mais</button>
+                <button class="confirm-button">Ver mais</button>
 
             </div>
             <div class="categoria-cat">
@@ -118,7 +146,7 @@
                         <h3>Acessórios</h3>
                     </a>
                 </div>
-                <button>Ver mais</button>
+                <button class="confirm-button">Ver mais</button>
             </div>
         </div>
     </main>
@@ -182,7 +210,7 @@
         <h2>Ficaram Dúvidas?</h2>
         
         <a href="contato/contato.html">
-            <button>
+            <button class="confirm-button">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.1565 5.80629C15.0502 8.48755 14.1377 11.1938 12.119 11.8563C10.1002 12.5188 7.73771 10.8813 6.84396 8.20004C5.95021 5.51879 6.86271 2.81254 8.88146 2.15004C10.9002 1.48754 13.2627 3.12504 14.1565 5.80629ZM6.27521 12.4125C7.45646 14.4375 7.16896 16.7938 5.63771 17.6688C4.10646 18.5438 1.90646 17.6125 0.731463 15.5875C-0.443537 13.5625 -0.168537 11.2063 1.36271 10.3313C2.89396 9.4563 5.09396 10.3875 6.26896 12.4125H6.27521ZM4.32521 25.075C7.60021 16.2438 13.419 14 16.0002 14C18.5815 14 24.4002 16.2438 27.6752 25.075C27.9002 25.6813 28.0002 26.3313 28.0002 26.9813V27.0813C28.0002 28.6938 26.694 30 25.0815 30C24.3627 30 23.6502 29.9125 22.9565 29.7375L17.4565 28.3625C16.5002 28.125 15.5002 28.125 14.544 28.3625L9.04396 29.7375C8.35021 29.9125 7.63771 30 6.91896 30C5.30646 30 4.00021 28.6938 4.00021 27.0813V26.9813C4.00021 26.3313 4.10021 25.6813 4.32521 25.075ZM26.3627 17.6688C24.8315 16.7938 24.544 14.4375 25.7252 12.4125C26.9065 10.3875 29.1002 9.4563 30.6315 10.3313C32.1627 11.2063 32.4502 13.5625 31.269 15.5875C30.0877 17.6125 27.894 18.5438 26.3627 17.6688ZM19.3815 11.8563C17.3627 11.1938 16.4502 8.48755 17.344 5.80629C18.2377 3.12504 20.6002 1.48754 22.619 2.15004C24.6377 2.81254 25.5502 5.51879 24.6565 8.20004C23.7627 10.8813 21.4002 12.5188 19.3815 11.8563Z" fill="white"/>
                     </svg>
