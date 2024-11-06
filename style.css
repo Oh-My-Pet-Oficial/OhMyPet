@@ -46,6 +46,12 @@ p {
     font-family: 'Inter';
 }
 
+.container-grid {
+    max-width: 1620px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
 .header {
     height: 149px;
     width: 100%;
@@ -54,12 +60,6 @@ p {
     align-items: center;
 
     background-color: var(--bege-omp);
-}
-
-.container-grid {
-    max-width: 1620px;
-    width: 80vw;
-    margin: 0 auto;
 }
 
 #icon-logo {

@@ -8,7 +8,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="container-grid">
             <img id="icon-logo-compact" src="images/logotipo/gatinho-icon.svg" alt="Versão compacta do Logotipo Oh My Pet">
             <div class="menu" id="menu">
@@ -46,7 +46,7 @@
                
             </div>
            
-            <button class="menu-button" onclick="openCloseMenu()">
+            <button  id="menu-button" class="menu-button" onclick="openCloseMenu()">
                 <svg id="icon-bars"  width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 12.75C0 9.29297 2.80893 6.5 6.28571 6.5H81.7143C85.1911 6.5 88 9.29297 88 12.75C88 16.207 85.1911 19 81.7143 19H6.28571C2.80893 19 0 16.207 0 12.75ZM0 44C0 40.543 2.80893 37.75 6.28571 37.75H81.7143C85.1911 37.75 88 40.543 88 44C88 47.457 85.1911 50.25 81.7143 50.25H6.28571C2.80893 50.25 0 47.457 0 44ZM88 75.25C88 78.707 85.1911 81.5 81.7143 81.5H6.28571C2.80893 81.5 0 78.707 0 75.25C0 71.793 2.80893 69 6.28571 69H81.7143C85.1911 69 88 71.793 88 75.25Z" fill="#6460A7"/>
                 </svg>
@@ -56,9 +56,12 @@
                 </svg>
             </button>
         </div>
-    </header>
+    </header> -->
 
+    <header-omp></header-omp>
+    
     <main>
+        
         <div class="slider">
             <div class="list">
                 <div class="item active">
@@ -317,6 +320,10 @@
             </p>
         </div>
     </footer>
+
+
+
+    <script src="web-components/headerOmp.js"></script>
 
 </body>
 </html>
