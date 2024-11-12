@@ -25,37 +25,39 @@ class HeaderOmp extends HTMLElement {
         header.innerHTML = `
 
            <div class="container-grid">
-            <img id="icon-logo-compact" src="images/logotipo/gatinho-icon.svg" alt="Versão compacta do Logotipo Oh My Pet">
+            <img id="icon-logo-compact" src="/images/logotipo/gatinho-icon.svg" alt="Versão compacta do Logotipo Oh My Pet">
             <div class="menu" id="menu">
 
                 <div class="header-links">
-                    <img id="icon-logo" src="images/logotipo/logo-header.svg" alt="Logotipo OMP">
+                    <img id="icon-logo" src="/images/logotipo/logo-header.svg" alt="Logotipo OMP">
 
                     <nav class="header-nav">
                         <ul class="header-nav-lista">
                             <li>
-                                <a href="index.html">Principal</a>
+                                <a class="link-omp" href="/index.html">Principal</a>
                             </li>
                             <li>
-                                <a href="Adoção img/Adoção.html">Adote</a>
+                                <a class="link-omp" href="/adocao/Adoção.html">Adote</a>
                             </li>
                             <li>
-                                <a href="produtos/index.html">Produtos</a>
+                                <a class="link-omp" href="/produtos/index.html">Produtos</a>
                             </li>
                             <li>
-                                <a href="servicos/servicos.html">Serviços</a>
+                                <a class="link-omp" href="/servicos/servicos.html">Serviços</a>
                             </li>
                         </ul>
                     </nav>
 
                     <div class="login-icons">
-                        <a href="">
-                            <img src="images/icons/contact-icon.svg" alt="">
-                            Contato</a>
+                        <a class="link-omp" href="/contato/contato.html">
+                            <img src="/images/icons/contact-icon.svg" alt="">
+                            Contato
+                        </a>
 
-                        <a href="">
-                            <img src="images/icons/login-icon.svg" alt="">
-                            Entrar</a>
+                        <a class="link-omp" href="#">
+                            <img src="/images/icons/login-icon.svg" alt="">
+                            Entrar
+                        </a>
                     </div>
                 </div>
 
@@ -129,7 +131,7 @@ class HeaderOmp extends HTMLElement {
 
         style.textContent = `
 
-        :root {
+        :host {
             --laranja-claro-omp: #FBD4BA;
             --roxo-claro-omp: #CECCE7;
             --roxo-omp: #6460A7 ;
@@ -141,7 +143,7 @@ class HeaderOmp extends HTMLElement {
         }
 
 
-        h1, h2, h3, a {
+        h1, h2, h3{
             font-family: 'Dosis';
             font-size: 1.5em;
             font-weight: 600;
@@ -214,8 +216,17 @@ class HeaderOmp extends HTMLElement {
             padding: 0;
         }
 
-        .header a {
+        .link-omp {
             color: var(--cinza-omp);
+            font-family: 'Dosis';
+            font-size: 1.5em;
+            font-weight: 600;
+            text-decoration-line: none;
+            cursor: pointer;
+        }
+
+        .link-omp:hover {
+            color: black;
         }
 
         .header .container-grid {
@@ -306,10 +317,6 @@ class HeaderOmp extends HTMLElement {
             .login-icons {
                flex-direction: column;
                align-items: center;
-            }
-
-            .categoria-cat, .categoria-dog {
-                flex-direction: column;
             }
         }
 

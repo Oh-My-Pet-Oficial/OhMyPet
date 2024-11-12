@@ -1,0 +1,123 @@
+:root {
+    --laranja-claro-omp: #FBD4BA;
+    --roxo-claro-omp: #CECCE7;
+    --roxo-omp: #6460A7 ;
+    --laranja-omp: #D65F36 ;
+    --roxo-escuro-omp: #2A315B ;
+    --laranja-escuro-omp: #753E2B;
+    --bege-omp: #F4F3EE;
+    --cinza-omp: #515151;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Dosis';
+    src: url(fonts/Dosis-VariableFont_wght.ttf);
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(fonts/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 100 900;
+}
+
+h1, h2, h3, a{
+    font-family: 'Dosis';
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration-line: none;
+}
+
+h2 {
+    font-size: 2.25em;
+    color: var(--roxo-omp);
+}
+
+.footer {
+    background-color: var(--bege-omp);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    padding: 48px 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    gap: 24px;
+}
+
+.container-link h2, .formas-pagamento h2, .redes-sociais h2{
+    font-size: 1.5em;
+    margin-bottom: 12px;
+}
+
+.links a {
+    font-weight: 500;
+    font-size: 1.25em;
+
+    text-decoration: none;
+    color: var(--cinza-omp);
+}
+
+.links a:hover {
+    color: black;
+}
+
+.formas-pagamento, .redes-sociais {
+    display: flex;
+    flex-direction: column;
+}
+
+.pg-icones, .social-icones {
+    display: flex;
+
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.footer p {
+    text-align: center;
+    font-weight: 600;
+    color: var(--cinza-omp);
+    font-family: 'Inter';
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .footer-links {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .redes-sociais {
+        order: -2;
+    }
+    
+    .formas-pagamento {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .redes-sociais, .social-icones, .formas-pagamento, .pg-icones {
+        width: 100%;
+        justify-content: space-between;
+        gap: unset;
+    }
+    
+    .footer p {
+        text-align: left;
+    }
+}

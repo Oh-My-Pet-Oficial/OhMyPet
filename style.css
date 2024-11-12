@@ -526,12 +526,12 @@ main .slider {
     gap: 8px;
 }
 
-footer {
+.bolinhas:nth-child(1) {
     width: 100%;
 
     background-color: var(--bege-omp);
 }
-
+/* 
 .footer-links {
     display: flex;
     justify-content: space-between;
@@ -573,11 +573,11 @@ footer {
     gap: 12px;
 }
 
-footer p {
+.footer p {
     text-align: center;
     font-weight: 600;
     color: var(--cinza-omp);
-}
+} */
 
 @media screen and (max-width: 1700px){ 
     .produtos-lista {
@@ -595,7 +595,7 @@ footer p {
 } 
 
 @media screen and (max-width: 1350px){
-    .header {
+    /* .header {
         height: 50px;
     }
 
@@ -652,7 +652,7 @@ footer p {
     .login-icons {
        flex-direction: column;
        align-items: center;
-    }
+    } */
 
     .categoria-cat, .categoria-dog {
         flex-direction: column;
@@ -671,7 +671,7 @@ footer p {
         flex-direction: column;
     }
 
-    .footer-links {
+    /* .footer-links {
         flex-direction: column;
         gap: 32px;
     }
@@ -682,7 +682,7 @@ footer p {
     
     .formas-pagamento {
         order: -1;
-    }
+    } */
 }
 
 @media screen and (max-width: 850px) {
@@ -711,9 +711,9 @@ footer p {
         gap: unset;
     }
     
-    footer p {
+    /* .footer p {
         text-align: left;
-    }
+    } */
 }
 
 @media screen and (max-width: 320px) {
