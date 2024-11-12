@@ -322,6 +322,11 @@ main .slider {
     transition: ease-in-out 300ms;
 }
 
+.confirm-button:hover {
+    background-color: var(--Paleta-de-Cores-Laranja-Claro, #fbd4ba);
+    color: var(--Paleta-de-Cores-Laranja-OMP, #d65f36);
+}
+
 .cat {
     background-color: var(--laranja-claro-omp);
     border: 1px solid var(--laranja-omp);
@@ -504,7 +509,7 @@ main .slider {
 
 .contato {
     width: 100%;
-    margin-bottom: 132px;
+    margin: 132px 0;
     
     display: flex;
     justify-content: center;
@@ -524,6 +529,11 @@ main .slider {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.cotato button:hover {
+    background-color: var(--Paleta-de-Cores-Laranja-Claro, #fbd4ba);
+    color: var(--Paleta-de-Cores-Laranja-OMP, #d65f36);
 }
 
 .bolinhas:nth-child(1) {
