@@ -30,3 +30,5 @@ const reloadSlider = () => {
     let checkleft = itemsBanner[active].offsetLeft;
     listBanner.style.left = - checkleft + 'px';
 }
+
+// Header
