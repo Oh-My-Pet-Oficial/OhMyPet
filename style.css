@@ -305,7 +305,7 @@ main .slider {
     border: 1px solid var(--roxo-omp);
 }
 
-.confirm-button {
+.confirm-button{
     width: 205px;
     height: 70px;
     background: var(--roxo-omp);
@@ -325,6 +325,12 @@ main .slider {
 .confirm-button:hover {
     background-color: var(--Paleta-de-Cores-Laranja-Claro, #fbd4ba);
     color: var(--Paleta-de-Cores-Laranja-OMP, #d65f36);
+
+}
+
+.confirm-button:hover svg {
+    /* Precisa que esteja em "currentColor" para eu alterar a cor com fill no CSS */
+    fill: #d65f36;
 }
 
 .cat {
