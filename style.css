@@ -52,7 +52,9 @@ p {
     margin: 0 auto;
 }
 
-.header {
+
+/* Header */
+/* .header {
     height: 149px;
     width: 100%;
 
@@ -101,7 +103,7 @@ p {
 }
 
 .header-nav-lista{
-    /* Preciso calcular em porcentagem*/
+    // Preciso calcular em porcentagem
     width: 539px;
 
     display: flex;
@@ -140,7 +142,7 @@ p {
 #icon-x {
     width: 36px;
     height: 48px;
-}
+} */
 
 main {
     width: 100%;
