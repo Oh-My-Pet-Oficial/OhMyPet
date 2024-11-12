@@ -25,11 +25,11 @@ class HeaderOmp extends HTMLElement {
         header.innerHTML = `
 
            <div class="container-grid">
-            <img id="icon-logo-compact" src="/images/logotipo/gatinho-icon.svg" alt="Versão compacta do Logotipo Oh My Pet">
+            <img id="icon-logo-compact" src="OhMyPet/images/logotipo/gatinho-icon.svg" alt="Versão compacta do Logotipo Oh My Pet">
             <div class="menu" id="menu">
 
                 <div class="header-links">
-                    <img id="icon-logo" src="/images/logotipo/logo-header.svg" alt="Logotipo OMP">
+                    <img id="icon-logo" src="OhMyPet/images/logotipo/logo-header.svg" alt="Logotipo OMP">
 
                     <nav class="header-nav">
                         <ul class="header-nav-lista">
@@ -37,7 +37,7 @@ class HeaderOmp extends HTMLElement {
                                 <a class="link-omp" href="/index.html">Principal</a>
                             </li>
                             <li>
-                                <a class="link-omp" href="/adocao/Adoção.html">Adote</a>
+                                <a class="link-omp" href="OhMyPet/adocao/Adoção.html">Adote</a>
                             </li>
                             <li>
                                 <a class="link-omp" href="/produtos/index.html">Produtos</a>
