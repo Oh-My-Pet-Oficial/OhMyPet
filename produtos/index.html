@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/logotipo/gatinho-icon.svg">
+    <link rel="icon" type="image/x-icon" href="../images/logotipo/gatinho-icon.svg">
 </head>
 
 <body>
@@ -77,8 +77,11 @@
     <section id="produtos">
         <div class="textos"> <h2>Do que precisa?</h2> <div class="ordenar" ><h2>Ordenar por:</h2> <button>Relevância</button></div> </div>
         <div class="principal">
-            <div class="lateral">
-                <input type="text" placeholder="Buscar...">
+            <aside class="lateral">
+                <div class="search-filter">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                
                 
                 <div class="tipo">
                     <div class="especie"> <h2>Cães</h2> <img src="imgs/Vector.svg" alt=""></div>
@@ -127,9 +130,608 @@
                     <button>Acessórios</button>
                     <button>Utilidades</button>
                 </div>
-                <div class="tabela">
+
+                <details open class="filter-prod">
+                   <summary>Marcas</summary>
+                   <div class="filter-content">
+                        <div class="search-filter">
+                            <input type="text" placeholder="Buscar marca" name="" id="">
+                        </div>
+                        <div class="filter-check">
+                            <label class="filter-option" for="">
+                                <input class="filter-checkbox" type="checkbox" name="" id="" value="marca 1">
+                                Marca 1
+                            </label>
+                        </div>
+                        <div class="filter-check">
+                            <label class="filter-option" for="">
+                                <input class="filter-checkbox" type="checkbox" name="" id="">
+                                Marca 2
+                            </label>
+                        </div>
+                        <div class="filter-check">
+                            <label class="filter-option" for="">
+                                <input class="filter-checkbox" type="checkbox" name="" id="">
+                                Marca 3
+                            </label>
+                        </div>
+                   </div>
+                </details>
+
+            </aside>
+            <div class="tabela-produtos">
+                <header class="produtos-header">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="-1" width="46" height="46" rx="23" transform="matrix(1 8.74228e-08 8.74228e-08 -1 8.74228e-08 46)" fill="white"/>
+                    <rect x="1" y="-1" width="46" height="46" rx="23" transform="matrix(1 8.74228e-08 8.74228e-08 -1 8.74228e-08 46)" stroke="#D65F36" stroke-width="2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7589 23.9998L33.679 14.2444C34.3723 13.791 35.3019 13.9856 35.7553 14.679C36.2086 15.3723 36.0141 16.3019 35.3207 16.7553L24.2408 23.9998L35.3207 31.2444C36.0141 31.6977 36.2086 32.6273 35.7553 33.3207C35.3019 34.0141 34.3723 34.2086 33.679 33.7553L18.7589 23.9998Z" fill="#D65F36"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75885 23.9998L23.679 14.2444C24.3723 13.791 25.3019 13.9856 25.7553 14.679C26.2086 15.3723 26.0141 16.3019 25.3207 16.7553L14.2408 23.9998L25.3207 31.2444C26.0141 31.6977 26.2086 32.6273 25.7553 33.3207C25.3019 34.0141 24.3723 34.2086 23.679 33.7553L8.75885 23.9998Z" fill="#D65F36"/>
+                    </svg>
+
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="-1" width="46" height="46" rx="23" transform="matrix(1 8.74228e-08 8.74228e-08 -1 8.74228e-08 46)" fill="white"/>
+                        <rect x="1" y="-1" width="46" height="46" rx="23" transform="matrix(1 8.74228e-08 8.74228e-08 -1 8.74228e-08 46)" stroke="#D65F36" stroke-width="2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7589 23.9998L28.679 14.2444C29.3723 13.791 30.3019 13.9856 30.7553 14.679C31.2086 15.3723 31.0141 16.3019 30.3207 16.7553L19.2408 23.9998L30.3207 31.2444C31.0141 31.6977 31.2086 32.6273 30.7553 33.3207C30.3019 34.0141 29.3723 34.2086 28.679 33.7553L13.7589 23.9998Z" fill="#D65F36"/>
+                    </svg>
+
+                    <div class="enumarable-list">
+                        <p>1</p>
+                    </div>
                     
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="-1" y="1" width="46" height="46" rx="23" transform="matrix(-1 0 0 1 46 0)" fill="white"/>
+                        <rect x="-1" y="1" width="46" height="46" rx="23" transform="matrix(-1 0 0 1 46 0)" stroke="#D65F36" stroke-width="2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M34.2411 24.0002L19.321 33.7556C18.6277 34.209 17.6981 34.0144 17.2447 33.321C16.7914 32.6277 16.9859 31.6981 17.6793 31.2447L28.7592 24.0002L17.6793 16.7556C16.9859 16.3023 16.7914 15.3727 17.2447 14.6793C17.6981 13.9859 18.6277 13.7914 19.321 14.2447L34.2411 24.0002Z" fill="#D65F36"/>
+                    </svg>
+
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="-1" y="1" width="46" height="46" rx="23" transform="matrix(-1 0 0 1 46 0)" fill="white"/>
+                        <rect x="-1" y="1" width="46" height="46" rx="23" transform="matrix(-1 0 0 1 46 0)" stroke="#D65F36" stroke-width="2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.2411 24.0002L14.321 33.7556C13.6277 34.209 12.6981 34.0144 12.2447 33.321C11.7914 32.6277 11.9859 31.6981 12.6793 31.2447L23.7592 24.0002L12.6793 16.7556C11.9859 16.3023 11.7914 15.3727 12.2447 14.6793C12.6981 13.9859 13.6277 13.7914 14.321 14.2447L29.2411 24.0002Z" fill="#D65F36"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M39.2411 24.0002L24.321 33.7556C23.6277 34.209 22.6981 34.0144 22.2447 33.321C21.7914 32.6277 21.9859 31.6981 22.6793 31.2447L33.7592 24.0002L22.6793 16.7556C21.9859 16.3023 21.7914 15.3727 22.2447 14.6793C22.6981 13.9859 23.6277 13.7914 24.321 14.2447L39.2411 24.0002Z" fill="#D65F36"/>
+                    </svg>
+                    
+                </header>
+                <div class="produtos-listas">
+                    <div class="produto-linha">
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                       
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                       
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                       
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                       
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    <!-- Imagem do Prod -->
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                    </div>
+                    <!-- <div class="produto-linha">
+                        <div class="produto">
+                            <article>
+                                <a href="">
+                                    Imagem do Prod
+                                    <img src="imgs/produtos/1.jpg" alt="racao para cachorro Golden">
+    
+                                    <div class="item-description">
+                                        <div class="title">
+                                            <h3>Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg
+                                            </h3>
+                                        </div>
+                                        <div class="pricing">
+                                            <div class="old-price">
+                                                <span>R$ 279,89
+                                                </span>
+                                            </div>
+                                            <div class="price">
+                                                <span>R$ 179,89</span> <div class="percentage-disc text-xs">-19%</div>
+                                            </div>
+                                            <div class="price-promo">
+                                                Para assinantes
+                                                <span class="text-xs">
+                                                    ou até
+                                                    <b>
+                                                    2x de R$ 89,94 sem juros
+                                                    </b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div> -->
                 </div>
+                    
             </div>
         </div>
 
