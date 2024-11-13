@@ -37,7 +37,7 @@ class HeaderOmp extends HTMLElement {
                                 <a class="link-omp" href="./index.html">Principal</a>
                             </li>
                             <li>
-                                <a class="link-omp" href="./adocao/Adoção.html">Adote</a>
+                                <a class="link-omp" href="./adocao/adocao.html">Adote</a>
                             </li>
                             <li>
                                 <a class="link-omp" href="./produtos/index.html">Produtos</a>
