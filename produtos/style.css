@@ -1,13 +1,18 @@
-*{   margin: 0;
+* {  
+     margin: 0;
     padding: 0px;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
-    @font-face {
+@font-face {
     font-family: "Dosis";
     src: url(font/Dosis-VariableFont_wght.ttf);
+}
 
-    font-family: "Inter";
-    src: url(font/Inter-VariableFont_wght.ttf);}
+@font-face {
+    font-family: 'Inter';
+    src: url(font/Inter-VariableFont_wght.ttf);
+}
 
 :root {--laranja-claro-omp: #FBD4BA;
     --roxo-claro-omp: #CECCE7;
@@ -115,14 +120,15 @@ main { width: 100%;}
 
 .lattex { color: #753E2B;}
 
-.principal input { width: 80%;
+.principal .search-filter input { 
+    width: 80%;
     height: 40px;
     border: solid #D65F36;
     border-radius: 5px 15px 15px 5px;
     padding: 5px 0 5px 10px;
-    margin-bottom: 8%;
-    font-family: "Inter";
-    font-size: 1em;}
+    /* font-family: "Inter"; */
+    font-size: 1em;
+}
 
 .principal input:focus { outline: none;}
 
@@ -177,6 +183,193 @@ main { width: 100%;}
 .ordenar { display: flex;
     flex-direction: row;}
 
-.tabela { width: 300px;
+/* .tabela { width: 300px;
     height: 300px;
-    background-color: #6460A7;}
+    background-color: #6460A7;} */
+
+
+/* Vanessa Byork */
+
+.textos h2 {
+    font-size: 1.5rem;
+}
+
+aside .search-filter {
+    margin: 12px 0;
+}
+
+.filter-check, .filter-option {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.filter-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.filter-prod {
+    font-family: 'Dosis';
+}
+
+.filter-prod summary {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.search-filter input::placeholder, .search-filter input {
+    font-family: 'Inter Tight';
+    flex-shrink: 0;
+}
+
+
+.filter-option {
+    gap: 8px;
+    cursor: pointer;
+}
+
+.filter-checkbox {
+
+}
+
+.tabela-produtos {
+    width: 75.8125rem;
+    height: 152.8125rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #CECCE7;
+
+    padding: 3.69rem;
+}
+
+.produtos-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    background-color: transparent;
+}
+
+.enumarable-list {
+    width: 3.5rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+    border-radius: 1.875rem;
+    border: 2px solid #6460A7;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enumarable-list p{
+    color: #2A315B;
+    text-align: center;
+    font-family: Dosis;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.produto-lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto-linha {
+    display: flex;  
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 72px;
+}
+
+.produto {
+    width: 18.5625rem;
+    height: 22.5625rem;
+    flex-shrink: 0;
+    padding: 12px;
+
+    border-radius: 1.25rem;
+    border: 6px solid #6460A7;
+    background: #F4F3EE;
+
+    display: flex;
+    justify-content: center;
+}
+
+.produto a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px
+}
+
+.produto img {
+    height: 10.125rem;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    color: transparent;
+    mix-blend-mode: darken;
+}
+
+.item-description, .pricing {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.produto .title {
+    font-size: 0.75rem;
+}
+
+.produto .price {
+    display: flex;
+    justify-content: flex-start;
+    
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--laranja-omp);
+    /* gap 6*/
+    gap: .375rem;
+}
+
+.text-xs {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.percentage-disc {
+    background-color: var(--laranja-omp);
+    color: white;
+    border-radius: 12px;
+    padding: .25rem;
+}
+
+.produto .price-promo {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.old-price {
+    font-size: 0.75rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 0.75rem;
+    color: rgb(86, 92, 105);
+    text-decoration: line-through;
+}

@@ -22,7 +22,8 @@ class HeaderOmp extends HTMLElement {
 
         header.className = 'header';
 
-        const basePath = window.location.pathname === '/index.html' ? './' : '../';
+        // Muda o caminho de acordo com a localização do chamado do script
+        const basePath = window.location.pathname === './index.html' ? './' : '../';
 
         header.innerHTML = `
 
