@@ -85,7 +85,7 @@ main { width: 100%;}
     border-radius: 12px;}
 
 .produto-mv { height: 80%;
-    width: 300px;
+    width: 200px;
     background-color: #F4F3EE;
     border-style: solid;
     border-color: #6460A7;
@@ -108,12 +108,17 @@ main { width: 100%;}
     margin-bottom: 2%;
     font-size: 1.5em;}
 
-.banner { height: 100%;
+.banner { 
+    height: 100%;
     width: 90%;
     background-color: #FBD4BA;
-    border-radius: 12px;}
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
 
-#produtos { height: 500vh;
+#produtos { 
     width: 100%;
     padding: 0 5%;
     margin-top: 5%;}
@@ -136,7 +141,7 @@ main { width: 100%;}
     flex-direction: column;
     margin-bottom: 10%;}
 
-.especie { width: 75%;
+.especie { width: 90%;
     height: 60px;
     background-color: #D65F36;
     border-radius: 5px 50px 50px 5px;
@@ -147,7 +152,7 @@ main { width: 100%;}
 
 .especie h2 { font-size: 1.6em;
     margin-left: 12%;
-    color: #2A315B;}
+    color: black;}
 
 .especie img { height: 75%;
     margin-right: 7%;
@@ -178,7 +183,7 @@ main { width: 100%;}
     display: flex;
     flex-direction: row;}
 
-.lateral { width: 15%;}
+.lateral { width: 20%;}
 
 .ordenar { display: flex;
     flex-direction: row;}
@@ -189,6 +194,41 @@ main { width: 100%;}
 
 
 /* Vanessa Byork */
+
+.fixed-img-right {
+    position: absolute;
+    right: 5vw;
+    cursor: pointer;
+}
+
+.fixed-img-left {
+    position: absolute;
+    left: 5vw;
+    cursor: pointer;
+}
+
+.banner-1 {
+    width: 49%;
+    height: 100%;
+    border-radius: 0.625rem;
+    background: #fff;
+}
+
+#mais-vendidos .produto {
+    height: 80%;
+    width: 200px;
+    background-color: #F4F3EE;
+    border: 3px solid #6460A7;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+}
+
+#mais-vendidos .item-description {
+    border-top: 3px solid #6460A7;
+    padding: 8px;
+}
 
 .textos h2 {
     font-size: 1.5rem;
@@ -236,13 +276,13 @@ aside .search-filter {
 }
 
 .tabela-produtos {
-    width: 75.8125rem;
-    height: 152.8125rem;
+    width: 80%;
     flex-shrink: 0;
     border-radius: 0.625rem;
     background: #CECCE7;
 
     padding: 3.69rem;
+    margin-bottom: 7.8rem;
 }
 
 .produtos-header {
@@ -372,4 +412,11 @@ aside .search-filter {
     height: 0.75rem;
     color: rgb(86, 92, 105);
     text-decoration: line-through;
+}
+
+
+@media screen and ( max-width: 1550px) {
+    .produto {
+        width: 250px;
+    }
 }
