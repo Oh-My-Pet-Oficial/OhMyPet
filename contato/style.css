@@ -61,10 +61,19 @@ html {
     
 }
 
+.separador {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .patinhas{
-    width: 500px; 
-    height: auto;
-    text-align: right;
+    width: 50%;
+    height: 150px;
+    background-image: url(imagens/elements/group-paws.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 0;
+    background-size: contain;
 }
 
 .container {
@@ -132,14 +141,6 @@ h3 {
     padding: 0px;
     box-sizing: border-box;
 }
-
-
-.patinhas{
-    width: 500px; 
-    height: auto;
-    text-align: left;
-}
-
 
 
 #cases {
