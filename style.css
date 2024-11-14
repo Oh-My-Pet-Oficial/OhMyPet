@@ -293,17 +293,27 @@ main .slider {
     align-items: center;
 }
 
-.produto img{
+.prod-img{
     width: 205px;
     height: 146px;
 
     background-color: var(--roxo-claro-omp);
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.categoria-dog .produto img {
-    border: 1px solid var(--roxo-omp);
+.img-prod {
+    width: 8rem;
+    height: 10rem;
+    object-fit: contain;
+    mix-blend-mode: darken;
 }
+/* 
+.categoria-dog .produto {
+    border: 1px solid var(--roxo-omp);
+} */
 
 .confirm-button{
     width: 205px;
@@ -348,7 +358,7 @@ main .slider {
     color: var(--laranja-escuro-omp);
 }
 
-.categoria-cat .produto img {
+.categoria-cat .prod-img {
     background-color: var(--laranja-claro-omp);
 }
 
@@ -719,6 +729,10 @@ main .slider {
 @media screen and (max-width: 500px) {
     .menu {
         width: 100%;
+    }
+
+    .container-serv {
+        flex-direction: column;
     }
 
     .redes-sociais, .social-icones, .formas-pagamento, .pg-icones {
