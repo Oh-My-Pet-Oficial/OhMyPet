@@ -253,58 +253,54 @@ h3 {
 }
 
 /* Configurando a parte de duvidas */
-.dúvidas h2 {
-    font-family: "Dosis";
-    font-size: 28px;
-    text-align: center;
-    color: var(--roxo-escuro-omp);
+#duvidas .container-cards {
+    flex-direction: column;
+    align-items: normal;
+
+    background-color: var(--roxo-claro-omp);
+    border-radius: 1.25rem;
+    padding: 6rem;
+    gap: 2rem;
 }
 
-.faixa img {
-    height: 30px;
-    width: 30px;
+#duvidas h2 {
+    font-family: "Dosis";
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--roxo-escuro-omp);
+    margin-bottom: unset;
+}
+
+.accordions-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faixa {
+    width: 24.375rem;
+    height: 7.9375rem;
+    flex-shrink: 0;
+    background-color: var(--bege-omp);
+    border-radius: 0.625rem;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.faixa img  {
+    width: 3rem;
+    height: auto;
 }
 
 .faixa h2 {
-    font-family: "Dosis";
-    font-size: 23px;
-    text-align: center;
+    font-size: 1.25rem;
+    text-align: left;
     color: var(--roxo-omp);
 }
 
-.faixa-2 img {
-    height: 30px;
-    width: 30px;
+.faixa .content {
+    display: flex;
+    justify-content: space-between;
 }
 
-.faixa-2 h2 {
-    font-family: "Dosis";
-    font-size: 23px;
-    text-align: center;
-    color: var(--roxo-omp);
-}
-
-/* Duvidas parte de baixo */
-.faixa-3 img {
-    height: 30px;
-    width: 30px;
-}
-
-.faixa-3 h2 {
-    font-family: "Dosis";
-    font-size: 23px;
-    text-align: center;
-    color: var(--roxo-omp);
-}
-
-.faixa-4 img {
-    height: 30px;
-    width: 30px;
-}
-
-.faixa-4 h2 {
-    font-family: "Dosis";
-    font-size: 23px;
-    text-align: center;
-    color: var(--roxo-omp);
-}
