@@ -261,9 +261,11 @@ h3 {
     border-radius: 1.25rem;
     padding: 6rem;
     gap: 2rem;
+    margin: 0%;
 }
 
-#duvidas h2 {
+#duvidas h3 {
+    width: 75%;
     font-family: "Dosis";
     font-size: 1.25rem;
     text-align: center;
@@ -277,13 +279,26 @@ h3 {
 }
 
 .faixa {
-    width: 24.375rem;
-    height: 7.9375rem;
-    flex-shrink: 0;
+    width: 28rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 24px;
+    
+    cursor: pointer;
+}
+
+.faixa.active {
+    background-color: var(--bege-omp);
+    border-radius: 0.625rem;
+
+    transition: 0.5s ease-out;
+}
+
+.faixa .question {
     background-color: var(--bege-omp);
     border-radius: 0.625rem;
     padding: 2rem;
-
     display: flex;
     justify-content: space-between;
 }
@@ -300,7 +315,97 @@ h3 {
 }
 
 .faixa .content {
-    display: flex;
-    justify-content: space-between;
+
 }
 
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+
+    /* Animação */
+    transition: .5s ease;    
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 0.3s ease-in-out;
+}
+
+.answer p {
+    padding: 1rem;
+    line-height: 1.6;
+    font-family: 'Inter Tight';
+    font-size: 1rem;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Duvidas Formulario */
+.confirm-button{
+    width: 205px;
+    height: 70px;
+    background: var(--roxo-omp);
+    color: white;
+    border-radius: 78px;
+    border: none;
+
+    cursor: pointer;
+    
+    font-family: 'Dosis';
+    font-weight: 600;
+    font-size: 1.5em;
+    
+    transition: ease-in-out 300ms;
+}
+
+.confirm-button:hover {
+    background-color: var(--Paleta-de-Cores-Laranja-Claro, #fbd4ba);
+    color: var(--Paleta-de-Cores-Laranja-OMP, #d65f36);
+
+}
+
+.confirm-button:hover svg {
+    /* Precisa que esteja em "currentColor" para eu alterar a cor com fill no CSS */
+    fill: #d65f36;
+}
+
+
+.contato {
+    width: 100%;
+    margin: 132px 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contato h2 {
+    margin-bottom: 12px;
+}
+
+.contato button{
+    width: auto;
+    padding: 4px 64px;
+    background-color: var(--laranja-omp);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cotato button:hover {
+    background-color: var(--Paleta-de-Cores-Laranja-Claro, #fbd4ba);
+    color: var(--Paleta-de-Cores-Laranja-OMP, #d65f36);
+}

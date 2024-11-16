@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Contato</title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../footer.css">
@@ -26,8 +26,10 @@
   <!-- font corpo -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+
+  <!-- Javascript -->
+  <script src="contato.js" defer></script>
 </head>
 
 <body>
@@ -175,26 +177,26 @@
         
         <div class="accordions-line">
 
-          <div class="faixa">
-            <div class="content">
+          <div class="faixa faq">
+            <div class="content question">
               <img src="imagens/caixa.svg" alt="caixas" class="caixas">
-              <h2>Como vou receber a minha encomenda?</h2>
-  
+              <h3>Como vou receber a minha encomenda?</h3>
             </div>
-            <!-- <div class="content">
+            <div class="content answer">
               <p>Você poderá receber a sua encomenda via Sedex em todo Brasil.</p>
-            </div> -->
+            </div>
           </div>
   
   
-          <div class="faixa">
-            <img src="imagens/medico.svg" alt="medico" class="medico">
-            <h2>Como posso comprar um plano de saúde para o meu Pet?</h2>
-            <!-- <div class="content">
-  
+          <div class="faixa faq">
+            <div class="question">
+              <img src="imagens/elements/icons/vet.svg" alt="medico" class="medico">
+              <h3>Como posso comprar um plano de saúde para o meu Pet?</h3>
+            </div>
+            
+            <div class="answer">
               <p>Na aba "Planos de saúde escolha o melhor plano para o seu pet."</p>
-  
-            </div> -->
+            </div>
           </div>
         </div>
 
@@ -202,39 +204,49 @@
          
         <div class="accordions-line">
 
-          <div class="faixa">
-            <div class="content">
-              <img src="imagens/cora;ao.svg" alt="heart" class="heart">
-              <h2>Onde posso encontrar uma feira de adoção mais próxima?</h2>
+          <div class="faixa faq">
+            <div class="content question">
+              <img src="imagens/elements/icons/heart.svg" alt="heart" class="heart">
+              <h3>Onde posso encontrar uma feira de adoção mais próxima?</h3>
     
             </div>
-            <!-- <div class="content">
+            <div class="answer">
               <p>Você poderá receber a sua encomenda via Sedex em todo Brasil.</p>
-            </div> -->
+            </div>
           </div>
     
     
-          <div class="faixa">
-            <img src="imagens/calendario.svg" alt="calendario" class="calendario">
-            <h2>Como faço para realizar um agendamento?</h2>
-            <!-- <div class="content">
-    
+          <div class="faixa faq">
+            <div class="question">
+              <img src="imagens/calendario.svg" alt="calendario" class="calendario">
+              <h3>Como faço para realizar um agendamento?</h3>
+            </div>
+            <div class="answer">
               <p>Na aba "Planos de saúde escolha o melhor plano para o seu pet."</p>
-    
-            </div> -->
+            </div>
           </div>
         </div>
       
       
       </div> 
     </section>
-
-    <section class="container-grid">
-      <div class="container-grid">
-        <h2>Não encontrou a sua dúvida?</h2>
-      </div>
-    </section>
   </main>
+
+  <section class="contato">
+    <h2>Não encontrou a sua dúvida?</h2>
+    
+    <a href="../formulario/formulario.html">
+        <button class="confirm-button">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1565 5.80629C15.0502 8.48755 14.1377 11.1938 12.119 11.8563C10.1002 12.5188 7.73771 10.8813 6.84396 8.20004C5.95021 5.51879 6.86271 2.81254 8.88146 2.15004C10.9002 1.48754 13.2627 3.12504 14.1565 5.80629ZM6.27521 12.4125C7.45646 14.4375 7.16896 16.7938 5.63771 17.6688C4.10646 18.5438 1.90646 17.6125 0.731463 15.5875C-0.443537 13.5625 -0.168537 11.2063 1.36271 10.3313C2.89396 9.4563 5.09396 10.3875 6.26896 12.4125H6.27521ZM4.32521 25.075C7.60021 16.2438 13.419 14 16.0002 14C18.5815 14 24.4002 16.2438 27.6752 25.075C27.9002 25.6813 28.0002 26.3313 28.0002 26.9813V27.0813C28.0002 28.6938 26.694 30 25.0815 30C24.3627 30 23.6502 29.9125 22.9565 29.7375L17.4565 28.3625C16.5002 28.125 15.5002 28.125 14.544 28.3625L9.04396 29.7375C8.35021 29.9125 7.63771 30 6.91896 30C5.30646 30 4.00021 28.6938 4.00021 27.0813V26.9813C4.00021 26.3313 4.10021 25.6813 4.32521 25.075ZM26.3627 17.6688C24.8315 16.7938 24.544 14.4375 25.7252 12.4125C26.9065 10.3875 29.1002 9.4563 30.6315 10.3313C32.1627 11.2063 32.4502 13.5625 31.269 15.5875C30.0877 17.6125 27.894 18.5438 26.3627 17.6688ZM19.3815 11.8563C17.3627 11.1938 16.4502 8.48755 17.344 5.80629C18.2377 3.12504 20.6002 1.48754 22.619 2.15004C24.6377 2.81254 25.5502 5.51879 24.6565 8.20004C23.7627 10.8813 21.4002 12.5188 19.3815 11.8563Z" 
+
+                fill="currentColor"/>
+                </svg>
+                
+            Entre em contato
+        </button>
+    </a>
+</section>
 
 
   <!-- Footer -->
