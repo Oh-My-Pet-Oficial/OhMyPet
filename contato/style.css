@@ -1,7 +1,7 @@
 /* Reset CSS */
 * {
     margin: 0;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -12,15 +12,21 @@ body {
 :root {
     --laranja-claro-omp: #FBD4BA;
     --roxo-claro-omp: #CECCE7;
-    --roxo-omp: #6460A7 ;
-    --laranja-omp: #D65F36 ;
-    --roxo-escuro-omp: #2A315B ;
+    --roxo-omp: #6460A7;
+    --laranja-omp: #D65F36;
+    --roxo-escuro-omp: #2A315B;
     --laranja-escuro-omp: #753E2B;
     --bege-omp: #F4F3EE;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.container-grid {
+    max-width: 1620px;
+    width: 80vw;
+    margin: 0 auto;
 }
 
 /*para mexer na foto do banner*/
@@ -33,14 +39,14 @@ html {
     width: 100%;
 }
 
-.banner{
-        width: 80vw;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin: 0 auto;
-        /* justify-content: space-between; */
-    
+.banner {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 auto;
+    /* justify-content: space-between; */
+
 }
 
 /*configuração da fonte*/
@@ -53,12 +59,12 @@ html {
 }
 
 
-.animais{
+.animais {
     text-align: left;
-    background-size: cover;   
+    background-size: cover;
     display: flex;
-   
-    
+
+
 }
 
 .separador {
@@ -67,7 +73,7 @@ html {
     justify-content: flex-end;
 }
 
-.patinhas{
+.patinhas {
     width: 50%;
     height: 150px;
     background-image: url(imagens/elements/group-paws.svg);
@@ -81,232 +87,197 @@ html {
     align-items: center;
 }
 
+/* 
 #sobre {
     
     display: flex;
     flex-direction: column;
     /* padding: 100px 25%; */
-    justify-content: space-between;
-    text-align: left;
-    width: 722px;
-    margin: 0 auto
-}
+/* justify-content: center;
 
-#sobre img {
-    width: 200px;
-    flex-direction: column;
-    justify-content: left;
-}
+    width: 70%;
+    margin: 0 auto
+} */
+
 
 h2 {
     font-family: "Dosis";
-    font-size: 28px;
+    font-size: 2.25rem;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 3rem;
     color: var(--roxo-omp);
-}
-
-#sobre p {
-    font-family: "Inter Tight";
-    font-size: 17px;
-
-    text-align: right;
-
-    display: contents;
-    line-height: 1.5;
-}
-
-.sobre {
-    height: 80%;
-    width: 100%;
 }
 
 h3 {
     font-family: "Dosis";
     font-size: 25px;
     text-align: center;
-    
+
     height: 100%;
     width: 100%;
 }
 
-.conteudo-sobre{
+.conteudo-sobre {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
 }
 
-.texto-sobre{
-    width: 50%;
-    margin: 0;
-    padding: 0px;
+.conteudo-sobre img {
+    max-width: 28rem;
+    flex-direction: column;
+    justify-content: left;
+}
+
+
+.texto-sobre {
+    width: 40%;
+    height: fit-content;
+    padding: 2rem;
     box-sizing: border-box;
+    border-radius: 1.25rem;
+    border: 1px solid var(--laranja-omp);
+    background: var(--bege-omp);
+
+    color: var(--laranja-escuro-omp);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    font-family: "Inter Tight";
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
+#sobre .separador {
+    justify-content: flex-start;
+    margin: 72px 0;
+}
+
+#sobre .patinhas {
+    transform: scaleX(-1);
+}
 
 #cases {
     text-align: center;
 
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-    margin: 20px 0; /* Espaçamento externo */
+    margin: 20px 0;
+    /* Espaçamento externo */
 }
 
-#cases p {
-    margin-bottom: 70px;
+#cases h2 {
+    font-family: 'Dosis';
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.bolinhas {
+    position: absolute;
+    top: -200px;
+    left: -50px;
+}
+
+.bolinhas svg {
+    width: 15rem;
+}
+
+.bolinhas:nth-child(1) {
+    right: -50px;
+    left: unset;
+    top: 380px;
 }
 
 .container-cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0; /* Espaçamento externo */
-    padding: 137px; /* Espaçamento interno */
-    margin: 20px 0; /* Espaçamento externo */
+    
+    margin: 124px 0;
+    
+    position: relative;
 }
 
 /* Para mexer no card 1 */
-.card {
-    height: 400px;
-    width: 250px;
+.card,
+.card-2,
+.card-3 {
+    max-width: 23rem;
+    min-height: 30rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding: 2.5rem;
 
     background-color: var(--laranja-claro-omp);
-
-
+    border-radius: 1.25rem;
 }
 
 .card h2 {
-    font-family: "Dosis";
-    font-size: 28px;
-    text-align: center;
     color: var(--laranja-omp);
 }
 
-.card p {
-    color: var(black);
+#cases p {
+    color: black;
 
-    font-family:"Inter Tight";
-    font-size: 17px;
-
+    font-family: "Inter Tight";
+    font-size: 1.5rem;
+    line-height: 1.5;
     text-align: left;
-
-    padding: 7%;  
-
 }
 
-
 /* Para mexer no card 2 */
-
 .card-2 {
-    height: 400px;
-    width: 250px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-
+    transform: translateY(-125px);
     background-color: var(--roxo-claro-omp);
-
-
 }
 
 .card-2 h2 {
-    font-family: "Dosis";
-    font-size: 28px;
-    text-align: center;
     color: var(--roxo-escuro-omp);
 }
 
-.card-2 p {
-    color: var(black);
-
-    font-family:"Inter Tight";
-    font-size: 17px;
-
-    text-align: left;
-
-    padding: 7%;  
-
-}
-
-
 /* Para mexer no card 3 */
-
 .card-3 {
-    height: 400px;
-    width: 250px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-
     background-color: var(--bege-omp);
-
-
 }
 
 .card-3 h2 {
-    font-family: "Dosis";
-    font-size: 28px;
-    text-align: center;
     color: var(--laranja-escuro-omp);
 }
 
-.card-3 p {
-    color: var(black);
-
-    font-family:"Inter Tight";
-    font-size: 17px;
-
-    text-align: left;
-
-    padding: 7%;  
-
-}
-
 /* Configurando a parte de duvidas */
-
-.dúvidas h2{
+.dúvidas h2 {
     font-family: "Dosis";
     font-size: 28px;
     text-align: center;
     color: var(--roxo-escuro-omp);
 }
 
-
-.faixa img{
+.faixa img {
     height: 30px;
     width: 30px;
 }
 
-.faixa h2{
+.faixa h2 {
     font-family: "Dosis";
     font-size: 23px;
     text-align: center;
     color: var(--roxo-omp);
 }
 
-.faixa-2 img{
+.faixa-2 img {
     height: 30px;
     width: 30px;
 }
 
-.faixa-2 h2{
+.faixa-2 h2 {
     font-family: "Dosis";
     font-size: 23px;
     text-align: center;
@@ -314,25 +285,24 @@ h3 {
 }
 
 /* Duvidas parte de baixo */
-
-.faixa-3 img{
+.faixa-3 img {
     height: 30px;
     width: 30px;
 }
 
-.faixa-3 h2{
+.faixa-3 h2 {
     font-family: "Dosis";
     font-size: 23px;
     text-align: center;
     color: var(--roxo-omp);
 }
 
-.faixa-4 img{
+.faixa-4 img {
     height: 30px;
     width: 30px;
 }
 
-.faixa-4 h2{
+.faixa-4 h2 {
     font-family: "Dosis";
     font-size: 23px;
     text-align: center;

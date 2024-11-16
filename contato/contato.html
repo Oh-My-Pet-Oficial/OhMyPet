@@ -13,7 +13,7 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Demo styles -->
-   <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="swiper.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../images/logotipo/gatinho-icon.svg">
@@ -32,131 +32,179 @@
 
 <body>
   <header-omp></header-omp>
-  <main>  
+  <main>
 
     <div class="container-grid">
-       <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="imagens\banner\banner-1.png" alt="">
           </div>
           <div class="swiper-slide">
-            <img src="imagens\banner\banner-2.png" alt="">  
+            <img src="imagens\banner\banner-2.png" alt="">
           </div>
           <div class="swiper-slide">
             <img src="imagens\banner\banner-3.png" alt="">
           </div>
 
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
 
     </div>
-    
 
-
-
-    <!-- <div class="banner">
-      <div class="conteudo-banner">
-        <p>Conheça a Oh My Pet!</p>
-        <img src="imagens/banner.png" alt="Animais juntos e alegres" class="animais">
-
-      </div> -->
-
-    <div class="separador">
+    <div class="container-grid separador">
       <div class="patinhas"></div>
     </div>
-    <!-- <img src="imagens/patinhas.svg" alt="patinhas" class="patinhas"> -->
-
-    </div>
 
 
-  <section id="sobre">
-    <h2>Sobre nós</h2>
-    <div class="conteudo-sobre">
-      <img src="imagens/menina.png" alt="Menina com animais">
-      <div class="texto-sobre">
-        <p>Desde 2024, buscamos inovar e trazer vários serviços de alta qualidade para o seu pet.</p>
+    <!-- Sobre nos -->
+    <section class="container-grid" id="sobre">
+      <h2>Sobre nós</h2>
+      <section class="conteudo-sobre">
+        <img src="imagens/menina.png" alt="Menina com animais">
+        <div class="texto-sobre">
+          <p>Desde 2024, buscamos inovar e trazer vários serviços de alta qualidade para o seu pet.</p>
 
-        <p>Nosso objetivo é
-          proporcionar não apenas um serviço, mas uma experiência memorável para
-          pets e seus donos, criando um ambiente onde todos se sintam seguros, felizes
-          e valorizados.</p>
+          <p>Nosso objetivo é
+            proporcionar não apenas um serviço, mas uma experiência memorável para
+            pets e seus donos, criando um ambiente onde todos se sintam seguros, felizes
+            e valorizados.
+          </p>
 
-        <p>Além disso, Nossa intenção é ajudar os pets abandonados a terem a vida que
-          merecem junto a lares acolhedores.</p>
+          <p>Além disso, Nossa intenção é ajudar os pets abandonados a terem a vida que
+            merecem junto a lares acolhedores.
+          </p>
 
+        </div>
+      </section>
+
+      <div class="container-grid separador">
+        <div class="patinhas"></div>
       </div>
 
-    </div>
-    <div class="patinhas">
+      <section class="container-grid" id="cases">
 
-    </div>
-    
+        <div class="container-cards">
+          <div class="bolinhas">
+            <svg width="334" height="304" viewBox="0 0 334 304" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_544_107)">
+              <path d="M99.6356 51.1058C42.9855 65.1538 39.4392 114.192 53.3194 170.165C67.1995 226.138 93.2469 267.838 149.897 253.79C206.547 239.742 241.224 182.983 227.344 127.011C213.464 71.0378 156.286 37.0577 99.6356 51.1058Z" fill="#E88542"/>
+              </g>
+              <g clip-path="url(#clip1_544_107)">
+              <path d="M232.809 41.0034C189.874 41.4738 179.028 75.1985 179.482 116.654C179.936 158.109 191.519 191.588 234.454 191.117C277.389 190.647 311.829 156.664 311.375 115.209C310.921 73.7534 275.744 40.533 232.809 41.0034Z" fill="#CECCE7"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_544_107">
+              <rect width="208.823" height="179.295" fill="white" transform="matrix(-0.240689 -0.970602 -0.970602 0.240689 252.475 228.353)"/>
+              </clipPath>
+              <clipPath id="clip1_544_107">
+              <rect width="150.123" height="131.901" fill="white" transform="matrix(-0.010956 -0.99994 -0.99994 0.010956 312.197 190.266)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </div>
 
-  <section class="container-grid" id="cases">
+          <div class="card">
+            <div class="content">
+
+              <h2>Visão</h2>
+
+              <p>Ser o pet shop líder da região, reconhecido por nossa dedicação à excelência em atendimento e ao
+                bem-estar
+                dos animais.</p>
+
+            </div>
+          </div>
+
+          <div class="card-2">
+            <div class="content">
+
+              <h2>Missão</h2>
+
+              <p>Oferecer uma seleção diversificada de produtos de alta qualidade e serviços de adoção responsáveis,
+                resultando em satisfação</p>
+
+            </div>
+          </div>
+
+          <div class="card-3">
+            <div class="content">
+
+              <h2>Valores</h2>
+
+              <p>Colocamos o bem-estar dos animais em primeiro lugar, garantindo que todos os nossos produtos e serviços
+                promovam a saúde e a felicidade dos animais de estimação.</p>
+
+            </div>
+          </div>
+
+          
+          <div class="bolinhas">
+            <svg width="334" height="304" viewBox="0 0 334 304" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_544_107)">
+              <path d="M99.6356 51.1058C42.9855 65.1538 39.4392 114.192 53.3194 170.165C67.1995 226.138 93.2469 267.838 149.897 253.79C206.547 239.742 241.224 182.983 227.344 127.011C213.464 71.0378 156.286 37.0577 99.6356 51.1058Z" fill="#E88542"/>
+              </g>
+              <g clip-path="url(#clip1_544_107)">
+              <path d="M232.809 41.0034C189.874 41.4738 179.028 75.1985 179.482 116.654C179.936 158.109 191.519 191.588 234.454 191.117C277.389 190.647 311.829 156.664 311.375 115.209C310.921 73.7534 275.744 40.533 232.809 41.0034Z" fill="#CECCE7"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_544_107">
+              <rect width="208.823" height="179.295" fill="white" transform="matrix(-0.240689 -0.970602 -0.970602 0.240689 252.475 228.353)"/>
+              </clipPath>
+              <clipPath id="clip1_544_107">
+              <rect width="150.123" height="131.901" fill="white" transform="matrix(-0.010956 -0.99994 -0.99994 0.010956 312.197 190.266)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+
+
+      </section>
+    </section>
+
+    <section class="container-grid" id="dúvidas">
+
+      <h2>Ficou alguma dúvida?</h2>
+
+      <div class="container-cards">
+
+        <div class="faixa">
+          <div class="content">
+            <img src="imagens/caixa.svg" alt="caixas" class="caixas">
+            <h2>Como vou receber a minha encomenda?</h2>
+
+          </div>
+          <div class="content">
+            <p>Você poderá receber a sua encomenda via Sedex em todo Brasil.</p>
+          </div>
+        </div>
+
+
+        <div class="faixa-2">
+          <img src="imagens/medico.svg" alt="medico" class="medico">
+          <h2>Como posso comprar um plano de saúde para o meu Pet?</h2>
+          <div class="content">
+
+            <p>Na aba "Planos de saúde escolha o melhor plano para o seu pet."</p>
+
+          </div>
+        </div>
+    </section>
+
+
+
+    <!-- segunda parte duvidas -->
     <div class="container-cards">
 
-      <div class="card">
+      <div class="faixa-3">
         <div class="content">
-
-          <h2>Visão</h2>
-
-          <p>Ser o pet shop líder da região, reconhecido por nossa dedicação à excelência em atendimento e ao bem-estar
-            dos animais.</p>
-
-        </div>
-      </div>
-
-
-
-
-
-      <div class="card-2">
-        <div class="content">
-
-          <h2>Missão</h2>
-
-          <p>Oferecer uma seleção diversificada de produtos de alta qualidade e serviços de adoção responsáveis,
-            resultando em satisfação</p>
-
-        </div>
-      </div>
-
-
-
-
-
-      <div class="card-3">
-        <div class="content">
-
-          <h2>Valores</h2>
-
-          <p>Colocamos o bem-estar dos animais em primeiro lugar, garantindo que todos os nossos produtos e serviços
-            promovam a saúde e a felicidade dos animais de estimação.</p>
-
-        </div>
-      </div>
-
-    </div>
-
-
-
-  </section>
-
-  <section class="container-grid" id="dúvidas">
-
-    <h2>Ficou alguma dúvida?</h2>
-
-    <div class="container-cards">
-
-      <div class="faixa">
-        <div class="content">
-          <img src="imagens/caixa.svg" alt="caixas" class="caixas">
-          <h2>Como vou receber a minha encomenda?</h2>
+          <img src="imagens/cora;ao.svg" alt="heart" class="heart">
+          <h2>Onde posso encontrar uma feira de adoção mais próxima?</h2>
 
         </div>
         <div class="content">
@@ -165,55 +213,27 @@
       </div>
 
 
-      <div class="faixa-2">
-        <img src="imagens/medico.svg" alt="medico" class="medico">
-        <h2>Como posso comprar um plano de saúde para o meu Pet?</h2>
+      <div class="faixa-4">
+        <img src="imagens/calendario.svg" alt="calendario" class="calendario">
+        <h2>Como faço para realizar um agendamento?</h2>
         <div class="content">
 
           <p>Na aba "Planos de saúde escolha o melhor plano para o seu pet."</p>
 
         </div>
       </div>
-
-
-
-  </section>
-
-
-
-  <!-- segunda parte duvidas -->
-  <div class="container-cards">
-
-    <div class="faixa-3">
-      <div class="content">
-        <img src="imagens/cora;ao.svg" alt="heart" class="heart">
-        <h2>Onde posso encontrar uma feira de adoção mais próxima?</h2>
-
-      </div>
-      <div class="content">
-        <p>Você poderá receber a sua encomenda via Sedex em todo Brasil.</p>
-      </div>
     </div>
 
 
-    <div class="faixa-4">
-      <img src="imagens/calendario.svg" alt="calendario" class="calendario">
-      <h2>Como faço para realizar um agendamento?</h2>
-      <div class="content">
-
-        <p>Na aba "Planos de saúde escolha o melhor plano para o seu pet."</p>
-
+    <section class="container-grid" id="dúvidas">
+      <div class="container-grid">
+        <h2>Não encontrou a sua dúvida?</h2>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
 
-  <section class="container-grid" id="dúvidas">
-    <div class="container-grid">
-      <h2>Não encontrou a sua dúvida?</h2>
-    </div>
-  </section>
-</main>
+  <!-- Footer -->
 
   <footer class="footer">
     <div class="footer-links container-grid">
