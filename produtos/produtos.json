@@ -1,0 +1,34 @@
+[
+    {
+        "title":"Brinquedo Napi Pelúcia Foca para Cães",
+        "description": "Foca de pelucia para cães brincarem",
+        "price": 809.99,
+        "discount": 19,
+        "prodImg": "imgs/produtos/2-foca.jpg",
+        "alt": "Foca de pelucia para cães brincarem, sua pelagem é em tom cinza."
+    },
+    {
+        "title":"Brinquedo Napi Pelúcia Foca para Cães",
+        "description": "Foca de pelucia para cães brincarem",
+        "price": 809.99,
+        "discount": 19,
+        "prodImg": "imgs/produtos/2-foca.jpg",
+        "alt": "Foca de pelucia para cães brincarem, sua pelagem é em tom cinza."
+    },
+    {
+        "title":"Brinquedo Napi Pelúcia Foca para Cães",
+        "description": "Foca de pelucia para cães brincarem",
+        "price": 999.99,
+        "discount": 19,
+        "prodImg": "imgs/produtos/2-foca.jpg",
+        "alt": "Foca de pelucia para cães brincarem, sua pelagem é em tom cinza."
+    },
+    {
+        "title":"Ração Golden Mega para Cães Filhotes de Porte Grande Sabor Frango e Arroz 15 kg",
+        "description": "Racao para cachorro Golden",
+        "price": 214.67,
+        "discount": 15,
+        "prodImg": "imgs/produtos/1.jpg",
+        "alt": "racao para cachorro Golden"
+    }
+]

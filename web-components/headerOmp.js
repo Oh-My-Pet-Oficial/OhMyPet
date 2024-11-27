@@ -23,42 +23,42 @@ class HeaderOmp extends HTMLElement {
         header.className = 'header';
 
         // Muda o caminho de acordo com a localização do chamado do script
-        // const basePath = window.location.pathname === './index.html' ? './' : '../';
+        const basePath = window.location.pathname === './index.html' ? './' : '../';
 
         header.innerHTML = `
 
            <div class="container-grid">
-            <img id="icon-logo-compact" src="/oh-my-pet-website/images/logotipo/gatinho-icon.svg" alt="Versão compacta do Logotipo Oh My Pet">
+            <img id="icon-logo-compact" src="${basePath}images/logotipo/gatinho-icon.svg" alt="Versão compacta do Logotipo Oh My Pet">
             <div class="menu" id="menu">
 
                 <div class="header-links">
-                    <img id="icon-logo" src="/oh-my-pet-website/images/logotipo/logo-header.svg" alt="Logotipo OMP">
+                    <img id="icon-logo" src="${basePath}images/logotipo/logo-header.svg" alt="Logotipo OMP">
 
                     <nav class="header-nav">
                         <ul class="header-nav-lista">
                             <li>
-                                <a class="link-omp" href="/oh-my-pet-website/index.html">Principal</a>
+                                <a class="link-omp" href="${basePath}index.html">Principal</a>
                             </li>
                             <li>
-                                <a class="link-omp" href="/oh-my-pet-website/adocao/adocao.html">Adote</a>
+                                <a class="link-omp" href="${basePath}adocao/adocao.html">Adote</a>
                             </li>
                             <li>
-                                <a class="link-omp" href="/oh-my-pet-website//produtos/index.html">Produtos</a>
+                                <a class="link-omp" href="${basePath}/produtos/index.html">Produtos</a>
                             </li>
                             <li>
-                                <a class="link-omp" href="/oh-my-pet-website/servicos/servicos.html">Serviços</a>
+                                <a class="link-omp" href="${basePath}servicos/servicos.html">Serviços</a>
                             </li>
                         </ul>
                     </nav>
 
                     <div class="login-icons">
-                        <a class="link-omp" href="/oh-my-pet-website/contato/contato.html">
-                            <img src="/oh-my-pet-website/images/icons/contact-icon.svg" alt="">
+                        <a class="link-omp" href="${basePath}contato/contato.html">
+                            <img src="${basePath}images/icons/contact-icon.svg" alt="">
                             Contato
                         </a>
 
                         <a class="link-omp" href="#">
-                            <img src="/oh-my-pet-website/images/icons/login-icon.svg" alt="">
+                            <img src="${basePath}images/icons/login-icon.svg" alt="">
                             Entrar
                         </a>
                     </div>
