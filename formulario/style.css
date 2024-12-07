@@ -24,6 +24,8 @@ html {
 }
 
 #contato{
+    margin: 132px 0
+    ;
     align-items: center;
     display: flex;
     width: 100%;
@@ -31,9 +33,13 @@ html {
 }
 
 #contato form {
-    height: 600px;
-    width: 40%;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    width: 70%;
+    max-width: 990px;
 
     background-color: var(--bege-omp);
     color: black;
@@ -45,28 +51,29 @@ html {
     font-family: "Dosis";
     font-weight: 600; /*Bold*/
 
-    text-transform: uppercase;
-
-    cursor: pointer;
-
+    /* text-transform: uppercase; */
     transition: background-color 500ms; 
 
+    padding:  48px 0;
 }
 
 #contato form button:hover {
     background-color: var(--laranja-omp);
 }
 
+.title-contact {
+    margin-bottom: 48px;
+}
+
 .contato-container1{
     width: 80%;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
 .campo {
-    width: 60%;
+    min-width: 360px;
 
     text-align: left;
     
@@ -78,15 +85,13 @@ html {
 }
 
 .campo-descricao {
-    width: 70%;
+    width: 80%;
     height: 37%;
     text-align: center;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
 }
 
 .campo input {
@@ -96,7 +101,7 @@ html {
     background-color:white;
 
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
 
     text-indent: 10px;
 
@@ -115,7 +120,6 @@ html {
     padding: 20px;
 
     resize: none;
-
 }
 
 .campo label, .campo-descricao label {
@@ -139,7 +143,7 @@ html {
 }
 
 
-#contato form button {
+.button-contact {
     height: 40px;
     width: 30%;
     
@@ -158,9 +162,11 @@ html {
     cursor: pointer;
 
     transition: background-color 500ms; 
+    
+    margin-top: 24px;
 }
 
-#contato form button:hover {
+.button-contact:hover {
     background-color:var(--laranja-escuro-omp);
 }
 
